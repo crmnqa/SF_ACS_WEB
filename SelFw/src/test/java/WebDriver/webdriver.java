@@ -33,7 +33,7 @@ public class webdriver{
 	public static void main(String args[]) throws InterruptedException{
   
 		
-	
+		WebDriver driver = new InternetExplorerDriver();
 		
 		
 		

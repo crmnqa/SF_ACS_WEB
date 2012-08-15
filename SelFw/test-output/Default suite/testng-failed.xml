@@ -5,7 +5,10 @@
     <classes>
       <class name="ACS_CRMN.WebJourney">
         <methods>
-          <include name="E_testWebDriverWebJourneyEdit"/>
+          <include name="A_WebJourney1"/>
+          <include name="B_CheckProfile"/>
+          <include name="E_WebJourneyEdit"/>
+          <include name="C_WebJourney2"/>
           <include name="setUp"/>
           <include name="G_CheckEntitlement"/>
           <include name="F_checkProfile"/>

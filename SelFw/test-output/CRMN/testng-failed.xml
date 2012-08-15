@@ -3,11 +3,22 @@
 <suite name="Failed suite [CRMN]" parallel="none">
   <test name="Webjourney(failed)" parallel="none" preserve-order="true">
     <classes>
+      <class name="ACS_CRMN.CSRjourney">
+        <methods>
+          <include name="C_CheckProfile"/>
+          <include name="A_custCreation"/>
+          <include name="B_custBankDetails"/>
+          <include name="D_CheckEntitlement"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- ACS_CRMN.CSRjourney -->
       <class name="ACS_CRMN.WebJourney">
         <methods>
+          <include name="B_CheckProfile"/>
           <include name="setUp"/>
           <include name="G_CheckEntitlement"/>
           <include name="F_checkProfile"/>
+          <include name="D_CheckEntitlement"/>
         </methods>
       </class> <!-- ACS_CRMN.WebJourney -->
     </classes>
