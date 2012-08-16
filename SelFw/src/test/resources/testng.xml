@@ -3,12 +3,12 @@
 <suite name="CRMN" parallel="none">
   <test name="Webjourney" preserve-order="true">
    <classes>
-     
-<class name="ACS_CRMN.WebJourney">
+    <!--  <class   WEB:  END to END journey --> 
+      <class name="ACS_CRMN.WebJourney">
      <methods>
  
  
-									        <!--  WEB:  END to END journey -->
+									    
 									        <include name="A_WebJourney1"/>
 									        <include name="B_CheckProfile"/>
 									        <include name="C_WebJourney2"/>
@@ -19,7 +19,7 @@
 									        
         
  </methods> 
- </class>  
+ </class>   
  
  
 
@@ -33,6 +33,22 @@
 										        <include name="B_custBankDetails" />
 										        <include name="C_CheckProfile" />
 										        <include name="D_CheckEntitlement" />
+										        
+        
+ </methods>
+ </class> 
+ 
+ 
+  <class name="ACS_CRMN.TLSjourney">
+ <methods>
+ 
+ 
+										 
+										        <!--   TLS: END to END journey -->
+										        <include name="A_TLSwebJourney" />
+										        <include name="B_TLScheckProfile" />
+										        <include name="D_CheckEntitlement" />
+										    
 										        
         
  </methods>

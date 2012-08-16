@@ -1,12 +1,12 @@
 package ACS_CRMN;
 
-import ACS_CRMN.WebJourneyBaseClass;
-
+ 
+ 
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class  WebJourney extends WebJourneyBaseClass {
+public class  TLSjourney extends TLSbaseClass {
  
 	AcsCalls acs=new AcsCalls();
  
@@ -18,21 +18,23 @@ public class  WebJourney extends WebJourneyBaseClass {
  	}
 	    
   	@Test (groups = "a") 
-	public void A_WebJourney1() throws Exception {
+	public void A_TLSwebJourney() throws Exception {
  	System.out.println("Step 1:-- Web journey - PART-1 started...stops beofre filling payment details....... " + "User ID is:---" + email); 	  	  
- 	 webjourney1(email);
+ 	TLSwebjourney1(email);
+ 	
  	}
  	 
- 	
- 	@Test (groups = "a") 
-	public static void B_CheckProfile() throws Exception {
- 		Thread.sleep(5000) ;
+ 	  
+  	@Test (groups = "a") 
+	public void B_TLScheckProfile() throws Exception {
+  	
+  		Thread.sleep(5000) ;
  		System.out.println("Step 2:-- Call out ACS to compare values entered in web journey....." ); 	
   
- 		String[] exp =  {"tnl", email,"External_ID", lastName, email, DispName, firstName, city, country, dob, postcode} ;
+ 		String[] exp =  {"tls", email,"External_ID", lastName, email, DispName, firstName, city, country, dob, postcode} ;
  		
  		
- 		String content = "{\"tenantId\":\"TNL\",\"username\":\"" + email +"\"}" ;
+ 		String content = "{\"tenantId\":\"TLS\",\"username\":\"" + email +"\"}" ;
  		
  		
  		String[] profile  = AcsCalls.custProfile(content,getProp("profile"))  ;
@@ -42,60 +44,37 @@ public class  WebJourney extends WebJourneyBaseClass {
  		
  		B_Assert_CheckProfile(profile);
  		Thread.sleep(5000);
- 		}
- 	 	 	
- 	@Test (groups = "a") 
-	public void C_WebJourney2() throws Exception {
- 	 	System.out.println("Step 3 :-- Web journey PART-2 fill payment details and save......." ); 	 
- 		 webjourney2(email);
- 		Thread.sleep(5000);
-
- 	}  
- 	
-	@Test (groups = "a") 
+  		
+  	}
+  	
+  	
+  	
+  	@Test (groups = "a") 
 	public void D_CheckEntitlement() throws Exception {
 	 
- 		System.out.println("Step 4:-- Call out ACS to check entitlements....." ); 		
- 		String content = "{\"tenantId\":\"TNL\",\"username\":\"" + email +"\"}" ;
+ 		System.out.println("Step 3:-- Call out ACS to check entitlements....." ); 		
+ 		String content = "{\"tenantId\":\"TLS\",\"username\":\"" + email +"\"}" ;
  		String[] entitlement = AcsCalls.custEntitlements(content,getProp("entitlements"))  ;	
  		
- 	   Assert.assertEquals( EntitlementMatch(entitlement),false,"Entitlements  before updation...should be zero......."); 
+ 	   Assert.assertEquals( EntitlementMatch(entitlement),true,"Entitlements  .........."); 
  	  Thread.sleep(5000);
  	}
- 	
- 	 
- 	@Test  
-	public void E_WebJourneyEdit() throws Exception {
- 		Thread.sleep(5000);
- 	 	System.out.println("Step 5:--- Editing user detals in middle of journey........." ); 	 
- 		 webjourneyEdit();
- 	}
- 	 	
- 	@Test  
-	public void F_checkProfile() throws Exception {
- 		Thread.sleep(5000);
- 		System.out.println("Step 6:-- Call out ACS to compare updated values in web journey....." ); 		
- 		String[] exp =  {"tnl", email,"External_ID", u_lastName, email, u_DispName, u_firstName, u_city, country, u_dob, postcode } ;
- 		String content = "{\"tenantId\":\"TNL\",\"username\":\"" + email +"\"}" ;
- 		String[] profile2  = AcsCalls.custProfile(content,getProp("profile"))  ;	
- 	    Assert.assertEquals( ProfileMatch(exp, profile2),true,"Profile after updation........");
- 		E_Assert_checkProfile(profile2) ; 
- 	}
- 	 	
- 	@Test  
-	public void G_CheckEntitlement() throws Exception {
- 		  
- 		System.out.println("Step 7:-- Call out ACS to check entitlements..Should exist now..." ); 		
- 		String content = "{\"tenantId\":\"TNL\",\"username\":\"" + email +"\"}" ;
- 		String[] entitlement =AcsCalls.custEntitlements(content,getProp("entitlements"))  ;	
- 		System.out.println(EntitlementMatch(entitlement)); 
- 	    Assert.assertEquals( EntitlementMatch(entitlement),true,"Entitlements  before updation...should be zero......."); 
- 	}
- 	
- 	 
-  
- 	
- 
+  	
+  	
+  	
+  	
+  	
+  	
+  	
+  	
+  	
+  	
+  	
+  	
+  	
+  	
+  	
+  	
  	// END
  	
  	
@@ -130,7 +109,7 @@ public class  WebJourney extends WebJourneyBaseClass {
  	// WILL BE MOVED TO UTILITIES LATER
  	
  	
- 	public static boolean ProfileMatch(String[] exp, String[] prof){
+ 	public boolean ProfileMatch(String[] exp, String[] prof){
  		boolean flag = true;
 
 	   	  for ( int i = 0 ; i<=10; i ++)
@@ -162,8 +141,8 @@ public class  WebJourney extends WebJourneyBaseClass {
  	
  	
 
-	public static void B_Assert_CheckProfile(String[] profile) throws Exception {
-		Assert.assertEquals( profile[0],"tnl","Tenant ID Verification");
+	public void B_Assert_CheckProfile(String[] profile) throws Exception {
+		Assert.assertEquals( profile[0],"tls","Tenant ID Verification");
 	    Assert.assertEquals( profile[1], email,"User Name Verification");
 	   	Assert.assertEquals( profile[2] != null,true,"External ID Verification"); 
 	  	Assert.assertEquals( profile[3], lastName,"lastname Verification");

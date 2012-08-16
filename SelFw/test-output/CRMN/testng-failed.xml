@@ -12,15 +12,6 @@
           <include name="setUp"/>
         </methods>
       </class> <!-- ACS_CRMN.CSRjourney -->
-      <class name="ACS_CRMN.WebJourney">
-        <methods>
-          <include name="B_CheckProfile"/>
-          <include name="setUp"/>
-          <include name="G_CheckEntitlement"/>
-          <include name="F_checkProfile"/>
-          <include name="D_CheckEntitlement"/>
-        </methods>
-      </class> <!-- ACS_CRMN.WebJourney -->
     </classes>
   </test> <!-- Webjourney(failed) -->
 </suite> <!-- Failed suite [CRMN] -->

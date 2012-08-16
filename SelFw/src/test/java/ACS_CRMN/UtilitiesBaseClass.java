@@ -76,13 +76,30 @@ public class UtilitiesBaseClass {
 		  
 		    
 		  if(type.equals("id")) { 
-			  driver.findElement(By.xpath(Locator )).click();
+			  driver.findElement(By.id(Locator )).click();
 		  }
 		  
 		  }
 	 
 	  
-	   
+
+	  
+	  
+	  
+	  public void type(String type, String Locator, String val) {
+		  
+			 
+		  if(type.equals("xpath")) { 
+			  driver.findElement(By.xpath(Locator)).sendKeys(val);
+		  }
+		  
+		    
+		  if(type.equals("id")) { 
+			  driver.findElement(By.id(Locator)).sendKeys(val);
+		  }
+		  
+		  }
+	  
  
 	  
 		public static  String getProp( String prop) throws IOException {   
@@ -114,6 +131,7 @@ public class UtilitiesBaseClass {
 	 	driver = new FirefoxDriver(profile);
 		driver.manage().deleteAllCookies(); 
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		
 		 
  		}
 	  

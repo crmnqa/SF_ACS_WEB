@@ -3,17 +3,12 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)" preserve-order="true">
     <classes>
-      <class name="ACS_CRMN.WebJourney">
+      <class name="ACS_CRMN.TLSjourney">
         <methods>
-          <include name="A_WebJourney1"/>
-          <include name="B_CheckProfile"/>
-          <include name="E_WebJourneyEdit"/>
-          <include name="C_WebJourney2"/>
           <include name="setUp"/>
-          <include name="G_CheckEntitlement"/>
-          <include name="F_checkProfile"/>
+          <include name="D_CheckEntitlement"/>
         </methods>
-      </class> <!-- ACS_CRMN.WebJourney -->
+      </class> <!-- ACS_CRMN.TLSjourney -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

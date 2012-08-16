@@ -29,104 +29,30 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing=0 cellpadding=0 class="param">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Webjourney</td><td class="numi">3</td><td class="numi">3</td><td class="numi">0</td><td class="numi_attn">8</td><td class="numi">163.2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">2</td><td class="numi">2</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">60.2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <a id="summary"></a>
 <table cellspacing=0 cellpadding=0 class="passed">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr><th colspan="4">Webjourney &#8212; failed</th></tr>
-<tr class="failedodd"><td rowspan="4">ACS_CRMN.WebJourney<td><a href="#m1"><b>B_CheckProfile</b> (a) </a></td><td class="numi">1</td><td>1344967532181</td><td class="numi">6180</td></tr><tr class="failedodd"><td><a href="#m2"><b>D_CheckEntitlement</b> (a) </a></td><td class="numi">1</td><td>1344967550076</td><td class="numi">384</td></tr><tr class="failedodd"><td><a href="#m3"><b>F_checkProfile</b>  </a></td><td class="numi">1</td><td>1344967603985</td><td class="numi">5195</td></tr><tr class="failedodd"><td><a href="#m4"><b>G_CheckEntitlement</b>  </a></td><td class="numi">1</td><td>1344967609182</td><td class="numi">153</td></tr>
-<tr class="failedeven"><td rowspan="4">ACS_CRMN.CSRjourney<td><a href="#m5"><b>A_custCreation</b> (a) </a></td><td class="numi">1</td><td>1344967625410</td><td class="numi">0</td></tr><tr class="failedeven"><td><a href="#m6"><b>B_custBankDetails</b> (a) </a></td><td class="numi">1</td><td>1344967625411</td><td class="numi">1</td></tr><tr class="failedeven"><td><a href="#m7"><b>C_CheckProfile</b> (a) </a></td><td class="numi">1</td><td>1344967625412</td><td class="numi">5157</td></tr><tr class="failedeven"><td><a href="#m8"><b>D_CheckEntitlement</b> (a) </a></td><td class="numi">1</td><td>1344967630570</td><td class="numi">5127</td></tr>
-<tr><th colspan="4">Webjourney &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="3">ACS_CRMN.WebJourney<td><a href="#m9"><b>A_WebJourney1</b> (a) </a></td><td class="numi">1</td><td>1344967490469</td><td class="numi">41712</td></tr><tr class="passedodd"><td><a href="#m10"><b>C_WebJourney2</b> (a) </a></td><td class="numi">1</td><td>1344967538363</td><td class="numi">11713</td></tr><tr class="passedodd"><td><a href="#m11"><b>E_WebJourneyEdit</b>  </a></td><td class="numi">1</td><td>1344967550461</td><td class="numi">53524</td></tr>
+<tr><th colspan="4">Default test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">ACS_CRMN.TLSjourney<td><a href="#m1"><b>D_CheckEntitlement</b> (a) </a></td><td class="numi">1</td><td>1345123308377</td><td class="numi">327</td></tr>
+<tr><th colspan="4">Default test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="2">ACS_CRMN.TLSjourney<td><a href="#m2"><b>A_TLSwebJourney</b> (a) </a></td><td class="numi">1</td><td>1345123268665</td><td class="numi">28239</td></tr><tr class="passedodd"><td><a href="#m3"><b>B_TLScheckProfile</b> (a) </a></td><td class="numi">1</td><td>1345123296905</td><td class="numi">11471</td></tr>
 </table>
-<h1>Webjourney</h1>
-<a id="m1"></a><h2>ACS_CRMN.WebJourney:D_CheckEntitlement</h2>
+<h1>Default test</h1>
+<a id="m1"></a><h2>ACS_CRMN.TLSjourney:D_CheckEntitlement</h2>
 <div style="padding-left:3em">
-<p>A JSONObject text must begin with &apos;{&apos; at character 1</p>
-org.json.JSONTokener.syntaxError(JSONTokener.java:496)
-<br/>at org.json.JSONObject.&lt;init&gt;(JSONObject.java:180)
-<br/>at org.json.JSONObject.&lt;init&gt;(JSONObject.java:403)
-<br/>at ACS_CRMN.AcsCalls.custEntitlements(AcsCalls.java:55)
-<br/>at ACS_CRMN.WebJourney.D_CheckEntitlement(WebJourney.java:61)
+<p>Entitlements  before updation...should be zero....... expected:&lt;false&gt; but was:&lt;true&gt;</p>
+org.testng.Assert.fail(Assert.java:89)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:489)
+<br/>at org.testng.Assert.assertEquals(Assert.java:118)
+<br/>at org.testng.Assert.assertEquals(Assert.java:281)
+<br/>at ACS_CRMN.TLSjourney.D_CheckEntitlement(TLSjourney.java:60)
 <br/>25 lines not shown
 </div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m2"></a><h2>ACS_CRMN.WebJourney:G_CheckEntitlement</h2>
-<div style="padding-left:3em">
-<p>A JSONObject text must begin with &apos;{&apos; at character 1</p>
-org.json.JSONTokener.syntaxError(JSONTokener.java:496)
-<br/>at org.json.JSONObject.&lt;init&gt;(JSONObject.java:180)
-<br/>at org.json.JSONObject.&lt;init&gt;(JSONObject.java:403)
-<br/>at ACS_CRMN.AcsCalls.custEntitlements(AcsCalls.java:55)
-<br/>at ACS_CRMN.WebJourney.G_CheckEntitlement(WebJourney.java:91)
-<br/>25 lines not shown
-</div>
+<a id="m2"></a><h2>ACS_CRMN.TLSjourney:A_TLSwebJourney</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m3"></a><h2>ACS_CRMN.CSRjourney:B_custBankDetails</h2>
-<div style="padding-left:3em">
-<p>null</p>
-ACS_CRMN.CSRBaseClass.BankDetails(CSRBaseClass.java:114)
-<br/>at ACS_CRMN.CSRjourney.B_custBankDetails(CSRjourney.java:31)
-<br/>25 lines not shown
-</div>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m4"></a><h2>ACS_CRMN.CSRjourney:C_CheckProfile</h2>
-<div style="padding-left:3em">
-<p>A JSONObject text must begin with &apos;{&apos; at character 1</p>
-org.json.JSONTokener.syntaxError(JSONTokener.java:496)
-<br/>at org.json.JSONObject.&lt;init&gt;(JSONObject.java:180)
-<br/>at org.json.JSONObject.&lt;init&gt;(JSONObject.java:403)
-<br/>at ACS_CRMN.AcsCalls.custProfile(AcsCalls.java:23)
-<br/>at ACS_CRMN.CSRjourney.C_CheckProfile(CSRjourney.java:44)
-<br/>25 lines not shown
-</div>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m5"></a><h2>ACS_CRMN.CSRjourney:D_CheckEntitlement</h2>
-<div style="padding-left:3em">
-<p>A JSONObject text must begin with &apos;{&apos; at character 1</p>
-org.json.JSONTokener.syntaxError(JSONTokener.java:496)
-<br/>at org.json.JSONObject.&lt;init&gt;(JSONObject.java:180)
-<br/>at org.json.JSONObject.&lt;init&gt;(JSONObject.java:403)
-<br/>at ACS_CRMN.AcsCalls.custEntitlements(AcsCalls.java:55)
-<br/>at ACS_CRMN.CSRjourney.D_CheckEntitlement(CSRjourney.java:57)
-<br/>25 lines not shown
-</div>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m6"></a><h2>ACS_CRMN.WebJourney:F_checkProfile</h2>
-<div style="padding-left:3em">
-<p>A JSONObject text must begin with &apos;{&apos; at character 1</p>
-org.json.JSONTokener.syntaxError(JSONTokener.java:496)
-<br/>at org.json.JSONObject.&lt;init&gt;(JSONObject.java:180)
-<br/>at org.json.JSONObject.&lt;init&gt;(JSONObject.java:403)
-<br/>at ACS_CRMN.AcsCalls.custProfile(AcsCalls.java:23)
-<br/>at ACS_CRMN.WebJourney.F_checkProfile(WebJourney.java:81)
-<br/>25 lines not shown
-</div>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m7"></a><h2>ACS_CRMN.WebJourney:B_CheckProfile</h2>
-<div style="padding-left:3em">
-<p>A JSONObject text must begin with &apos;{&apos; at character 1</p>
-org.json.JSONTokener.syntaxError(JSONTokener.java:496)
-<br/>at org.json.JSONObject.&lt;init&gt;(JSONObject.java:180)
-<br/>at org.json.JSONObject.&lt;init&gt;(JSONObject.java:403)
-<br/>at ACS_CRMN.AcsCalls.custProfile(AcsCalls.java:23)
-<br/>at ACS_CRMN.WebJourney.B_CheckProfile(WebJourney.java:39)
-<br/>25 lines not shown
-</div>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m8"></a><h2>ACS_CRMN.CSRjourney:A_custCreation</h2>
-<div style="padding-left:3em">
-<p>null</p>
-ACS_CRMN.CSRBaseClass.custCreation(CSRBaseClass.java:63)
-<br/>at ACS_CRMN.CSRjourney.A_custCreation(CSRjourney.java:26)
-<br/>25 lines not shown
-</div>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m9"></a><h2>ACS_CRMN.WebJourney:E_WebJourneyEdit</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m10"></a><h2>ACS_CRMN.WebJourney:C_WebJourney2</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m11"></a><h2>ACS_CRMN.WebJourney:A_WebJourney1</h2>
+<a id="m3"></a><h2>ACS_CRMN.TLSjourney:B_TLScheckProfile</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>
