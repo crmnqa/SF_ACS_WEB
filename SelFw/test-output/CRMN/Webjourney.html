@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Webjourney</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>10/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>13/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Aug 16 14:54:26 BST 2012</td>
+<td>Started on:</td><td>Thu Aug 16 15:05:17 BST 2012</td>
 </tr>
-<tr><td>Total time:</td><td>244 seconds (244594 ms)</td>
+<tr><td>Total time:</td><td>284 seconds (284478 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,52 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='ACS_CRMN.WebJourney.F_checkProfile()'><b>F_checkProfile</b><br>Test class: ACS_CRMN.WebJourney</td>
+<td><div><pre>java.lang.AssertionError: Profile after updation........ expected:&lt;true&gt; but was:&lt;false&gt;
+	at ACS_CRMN.WebJourney.F_checkProfile(WebJourney.java:81)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace10709843", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace10709843'><pre>java.lang.AssertionError: Profile after updation........ expected:&lt;true&gt; but was:&lt;false&gt;
+	at org.testng.Assert.fail(Assert.java:89)
+	at org.testng.Assert.failNotEquals(Assert.java:489)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:281)
+	at ACS_CRMN.WebJourney.F_checkProfile(WebJourney.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:702)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:894)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1219)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
+	at org.testng.TestNG.run(TestNG.java:1030)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>5</td>
+<td>ACS_CRMN.WebJourney@8fce95</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -77,53 +123,68 @@ function toggleAllBoxes() {
 <tr>
 <td title='ACS_CRMN.TLSjourney.A_TLSwebJourney()'><b>A_TLSwebJourney</b><br>Test class: ACS_CRMN.TLSjourney</td>
 <td></td>
-<td>27</td>
-<td>ACS_CRMN.TLSjourney@329f3d</td></tr>
+<td>28</td>
+<td>ACS_CRMN.TLSjourney@171bbc9</td></tr>
 <tr>
 <td title='ACS_CRMN.WebJourney.A_WebJourney1()'><b>A_WebJourney1</b><br>Test class: ACS_CRMN.WebJourney</td>
 <td></td>
 <td>35</td>
-<td>ACS_CRMN.WebJourney@6f7ce9</td></tr>
+<td>ACS_CRMN.WebJourney@8fce95</td></tr>
 <tr>
 <td title='ACS_CRMN.CSRjourney.A_custCreation()'><b>A_custCreation</b><br>Test class: ACS_CRMN.CSRjourney</td>
 <td></td>
-<td>38</td>
-<td>ACS_CRMN.CSRjourney@1dfafd1</td></tr>
+<td>37</td>
+<td>ACS_CRMN.CSRjourney@1749757</td></tr>
 <tr>
 <td title='ACS_CRMN.WebJourney.B_CheckProfile()'><b>B_CheckProfile</b><br>Test class: ACS_CRMN.WebJourney</td>
 <td></td>
 <td>10</td>
-<td>ACS_CRMN.WebJourney@6f7ce9</td></tr>
+<td>ACS_CRMN.WebJourney@8fce95</td></tr>
 <tr>
 <td title='ACS_CRMN.TLSjourney.B_TLScheckProfile()'><b>B_TLScheckProfile</b><br>Test class: ACS_CRMN.TLSjourney</td>
 <td></td>
 <td>10</td>
-<td>ACS_CRMN.TLSjourney@329f3d</td></tr>
+<td>ACS_CRMN.TLSjourney@171bbc9</td></tr>
 <tr>
 <td title='ACS_CRMN.CSRjourney.B_custBankDetails()'><b>B_custBankDetails</b><br>Test class: ACS_CRMN.CSRjourney</td>
 <td></td>
-<td>44</td>
-<td>ACS_CRMN.CSRjourney@1dfafd1</td></tr>
+<td>21</td>
+<td>ACS_CRMN.CSRjourney@1749757</td></tr>
 <tr>
 <td title='ACS_CRMN.CSRjourney.C_CheckProfile()'><b>C_CheckProfile</b><br>Test class: ACS_CRMN.CSRjourney</td>
 <td></td>
 <td>5</td>
-<td>ACS_CRMN.CSRjourney@1dfafd1</td></tr>
+<td>ACS_CRMN.CSRjourney@1749757</td></tr>
 <tr>
 <td title='ACS_CRMN.WebJourney.C_WebJourney2()'><b>C_WebJourney2</b><br>Test class: ACS_CRMN.WebJourney</td>
 <td></td>
 <td>11</td>
-<td>ACS_CRMN.WebJourney@6f7ce9</td></tr>
+<td>ACS_CRMN.WebJourney@8fce95</td></tr>
+<tr>
+<td title='ACS_CRMN.WebJourney.D_CheckEntitlement()'><b>D_CheckEntitlement</b><br>Test class: ACS_CRMN.WebJourney</td>
+<td></td>
+<td>5</td>
+<td>ACS_CRMN.WebJourney@8fce95</td></tr>
 <tr>
 <td title='ACS_CRMN.CSRjourney.D_CheckEntitlement()'><b>D_CheckEntitlement</b><br>Test class: ACS_CRMN.CSRjourney</td>
 <td></td>
 <td>0</td>
-<td>ACS_CRMN.CSRjourney@1dfafd1</td></tr>
+<td>ACS_CRMN.CSRjourney@1749757</td></tr>
 <tr>
 <td title='ACS_CRMN.TLSjourney.D_CheckEntitlement()'><b>D_CheckEntitlement</b><br>Test class: ACS_CRMN.TLSjourney</td>
 <td></td>
 <td>5</td>
-<td>ACS_CRMN.TLSjourney@329f3d</td></tr>
+<td>ACS_CRMN.TLSjourney@171bbc9</td></tr>
+<tr>
+<td title='ACS_CRMN.WebJourney.E_WebJourneyEdit()'><b>E_WebJourneyEdit</b><br>Test class: ACS_CRMN.WebJourney</td>
+<td></td>
+<td>34</td>
+<td>ACS_CRMN.WebJourney@8fce95</td></tr>
+<tr>
+<td title='ACS_CRMN.WebJourney.G_CheckEntitlement()'><b>G_CheckEntitlement</b><br>Test class: ACS_CRMN.WebJourney</td>
+<td></td>
+<td>0</td>
+<td>ACS_CRMN.WebJourney@8fce95</td></tr>
 </table><p>
 </body>
 </html>

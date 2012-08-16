@@ -1,18 +1,9 @@
 package ACS_CRMN;
-import ACS_CRMN.UtilitiesBaseClass; 
+ 
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
-import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxProfile;
-import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.openqa.selenium.remote.CapabilityType;
-import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.Select;
 
 
@@ -20,25 +11,22 @@ import org.openqa.selenium.support.ui.Select;
 public class WebJourneyBaseClass extends UtilitiesBaseClass {
 	 
 	Properties properties = new Properties();
-	
-
-
-		
+			
 		static String date =  date();
   		static String email =  emailid();  
 		
 		String password = "Password123";
 		String title = "Mr";
-		String firstName =   "F_" + date;
-		String lastName =   "L_" + date;
-		String day = "01";
+		static String firstName =   "F_" + date;
+		static String lastName =   "L_" + date;
+		static String day = "03";
 		String month = "Jan";
-		String year = "1990";
-		String dob = year +"-"+ "01" +"-"+ day ;
-		String postcode = "HA90AB";
-		String city = "Wembley";
-		String country = "United Kingdom";
-		String DispName = firstName+" "+lastName; 
+		static String year = "1990";
+		static String dob = year +"-"+ "01" +"-"+ day ;
+		static String postcode = "HA90AB";
+		static String city = "Wembley";
+		static String country = "United Kingdom";
+		static String DispName = firstName+" "+lastName; 
 		//Updated
 		
 		String u_title = "Mrs";
@@ -52,31 +40,13 @@ public class WebJourneyBaseClass extends UtilitiesBaseClass {
 		String u_city = "Wembley Park";
 		String u_DispName = u_firstName+" "+u_lastName; 
 	 
-		//Get this from Envi Variable
-		
-				
-//		
-//		public void setup( ) throws InterruptedException, FileNotFoundException, IOException {
-//			
-//			DesiredCapabilities capabilities = new DesiredCapabilities();
-//			capabilities.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);  
-//    		
-//		 FirefoxProfile profile= new FirefoxProfile(); 
-//		 profile.setAcceptUntrustedCertificates(true);
-//		 profile.setAssumeUntrustedCertificateIssuer(false);
-//    //	driver = new FirefoxDriver(profile);
-//		 driver = new InternetExplorerDriver(capabilities);
-//
-//	 	 driver.manage().deleteAllCookies(); 
-//	  	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-//		 
-//		}
+ 
 
 	public void webjourney1(String email) throws InterruptedException, IOException {
 		
 		 driver.manage().deleteAllCookies(); 
 		 
- 
+		// driver.get(getProp("sfurl"));
  		driver.get(getProp("weburl"));  
  		Thread.sleep(5000);
  
@@ -85,13 +55,18 @@ public class WebJourneyBaseClass extends UtilitiesBaseClass {
  		click("xpath", ".//*[@id='j_id0:j_id3:j_id11:j_id22:0:btnTopSubscribe']");
  	 
  	
- 		
- 		driver.findElement(By.id("j_id0:j_id1:personal_details_form:user_email")).sendKeys(email);
-		driver.findElement(By.id("j_id0:j_id1:personal_details_form:user_password")).sendKeys(password );
-		driver.findElement(By.id("j_id0:j_id1:personal_details_form:user_confirm_password")).sendKeys(password );
+ 		type("id", "j_id0:j_id1:personal_details_form:user_email", email);
+ 		type("id", "j_id0:j_id1:personal_details_form:user_password", password);
+ 		type("id", "j_id0:j_id1:personal_details_form:user_confirm_password", password);
+	 
+	 
 		new Select(driver.findElement(By.id("j_id0:j_id1:personal_details_form:user_title"))).selectByVisibleText(title);
-		driver.findElement(By.id("j_id0:j_id1:personal_details_form:user_first_name")).sendKeys(firstName);
-		driver.findElement(By.id("j_id0:j_id1:personal_details_form:user_last_name")).sendKeys(lastName);
+		
+		type("id", "j_id0:j_id1:personal_details_form:user_first_name", firstName);
+		
+		type("id", "j_id0:j_id1:personal_details_form:user_last_name", lastName);
+ 
+		
 		new Select(driver.findElement(By.id("j_id0:j_id1:personal_details_form:lstDateofBirthDays"))).selectByVisibleText(day);
 		new Select(driver.findElement(By.id("j_id0:j_id1:personal_details_form:lstDateofBirthMonths"))).selectByVisibleText(month);
 		new Select(driver.findElement(By.id("j_id0:j_id1:personal_details_form:lstDateofBirthYears"))).selectByVisibleText(year);
@@ -100,7 +75,10 @@ public class WebJourneyBaseClass extends UtilitiesBaseClass {
 		driver.findElement(By.id("j_id0:j_id1:personal_details_form:user_address_line_2")).sendKeys("Forum House");
 		driver.findElement(By.id("j_id0:j_id1:personal_details_form:user_address_line_3")).sendKeys("Empire Way");
 		driver.findElement(By.id("j_id0:j_id1:personal_details_form:user_city")).sendKeys(city);
-		driver.findElement(By.id("j_id0:j_id1:personal_details_form:user_accept_tAndCs")).click();
+		
+ 
+		click("id", "j_id0:j_id1:personal_details_form:user_accept_tAndCs");
+		
 		driver.findElement(By.id("ni-reg-btn-register")).submit();
 		Thread.sleep(10000);
 	}

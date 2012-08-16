@@ -1,78 +1,75 @@
 package ACS_CRMN;
-import ACS_CRMN.UtilitiesBaseClass; 
+ 
 
 import java.io.IOException;
-import java.util.concurrent.TimeUnit;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxProfile;
-import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.openqa.selenium.remote.CapabilityType;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 import java.util.Properties;
 
-public class CSRBaseClass extends UtilitiesBaseClass {
-	 
- 
- static CSRBaseClass csrl = new CSRBaseClass();
-		WebDriver driver;
-		String baseUrl;
-		
-		static String date =  date();
-  		static String email = "c"+ emailid();  
-		
-		String gender = "Male";
-		String title = "Mr";
-		String firstName =   "F_" + date;
-		String lastName =   "L_" + date;
-		String day = "01";
-		String month = "Jan";
-		String year = "1990";
-		String dob = day +"/"+ "02" +"/"+ year ;
-		String postcode = "HA90AB";
-		String city = "Wembley";
-		String country = "United Kingdom";
-		String DispName = firstName+" "+lastName; 
-		//Updated
-		
-		String u_title = "Mrs";
-		String u_firstName =   "1F_" + date ;
-		String u_lastName =   "1L_" + date;
-		String u_day = "02";
-		String u_month = "Feb";
-		String u_year = "1980";
-		String u_dob = day +"/"+ "03" +"/"+ year ;
-		String u_postcode = "HA99UB";
-		String u_city = "Wembley Park";
-		String u_DispName = u_firstName+" "+u_lastName; 
-	
-		//Get these from Envi
-		//String csrUrl  = "https://test.salesforce.com/" ; 
-	 	//String uid = "crm.admin@newsint.co.uk.uat" ;
-		//String pass = "England2012";
-		
-		
-	 
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 
-	public void custCreation() throws InterruptedException, IOException {
+public class CSRBaseClass extends UtilitiesBaseClass {
+	
+	Properties properties = new Properties();
+	String date =  date();
+	String email = "csr_" +  emailid();  
+	String gender = "Male";
+	String password = "Password123";
+	String title = "Mr";
+	String firstName =   "F_" + date;
+	String lastName =   "L_" + date;
+	String day = "01";
+	String month = "Jan";
+	String year = "1990";
+	String dob = day +"/"+ "03" +"/"+ year ;
+	String postcode = "HA90AB";
+	String city = "Wembley";
+	String country = "United Kingdom";
+	String DispName = firstName+" "+lastName; 
+	//Updated
+	
+	String u_title = "Mrs";
+	String u_firstName =   "1F_" + date ;
+	String u_lastName =   "1L_" + date;
+	String u_day = "03";
+	String u_month = "Feb";
+	String u_year = "1990";
+	String u_dob = day +"/"+ "03" +"/"+ year ;
+	String u_postcode = "HA99UB";
+	String u_city = "Wembley Park";
+	String u_DispName = u_firstName+" "+u_lastName;  
+	
+	String dobresp = year +"-"+ "03" +"-"+ day ;
+	
+	 
+	public void custCreation() throws InterruptedException, IOException{
 	
 		driver.manage().deleteAllCookies(); 
+ 		 
+		 
 		driver.get(getProp("sfurl"));
+		
+		Thread.sleep(5000);
 		driver.findElement(By.id("username")).sendKeys(getProp("sfuid"));
 		 
 		driver.findElement(By.id("password")).sendKeys(getProp("sfpass"));
 		driver.findElement(By.id("Login")).click();
 		Thread.sleep(10000);
+		
+		
+		
+		
 		driver.findElement(By.cssSelector("img.allTabsArrow")).click();
 		driver.findElement(By.linkText("Customers")).click();
 		driver.findElement(By.name("new")).click();
 		driver.findElement(By.cssSelector("#bottomButtonRow > input[name=\"save\"]")).click();
  
+
+		
 		driver.findElement(By.id("PersonEmail")).sendKeys(email);
+		
+		
+		
 	 
 		driver.findElement(By.id("name_firstacc2")).sendKeys(firstName);
  
@@ -168,17 +165,17 @@ if (flag == false) {
 	
 	public void Assert_CheckProfile(String[] profile) throws Exception {
 		Assert.assertEquals( profile[0],"tnl","Tenant ID Verification");
-	    Assert.assertEquals( profile[1],csrl.email,"User Name Verification");
+	    Assert.assertEquals( profile[1],email,"User Name Verification");
 	   	Assert.assertEquals( profile[2] != null,true,"External ID Verification"); 
-	  	Assert.assertEquals( profile[3],csrl.lastName,"lastname Verification");
-	  	Assert.assertEquals( profile[4],csrl.email,"email Verification");
-	    Assert.assertEquals( profile[5],csrl.DispName,"DisplayName Verification");
-	  	Assert.assertEquals( profile[6], csrl.firstName,"FirstName Verification");
+	  	Assert.assertEquals( profile[3],lastName,"lastname Verification");
+	  	Assert.assertEquals( profile[4],email,"email Verification");
+	    Assert.assertEquals( profile[5],DispName,"DisplayName Verification");
+	  	Assert.assertEquals( profile[6], firstName,"FirstName Verification");
 	  //	Assert.assertEquals( profile[7] != null,true,"IAM ID Verification");
-	  	Assert.assertEquals( profile[7],csrl.city,"email Verification");  	
-	    Assert.assertEquals( profile[8],csrl.country,"Country verification");
-	   Assert.assertEquals( profile[9],csrl.dob,"dob verification");
-	  Assert.assertEquals( profile[10],csrl.postcode,"PostCode verification");
+	  	Assert.assertEquals( profile[7],city,"email Verification");  	
+	    Assert.assertEquals( profile[8],country,"Country verification");
+	   Assert.assertEquals( profile[9],dobresp,"dob verification");
+	  Assert.assertEquals( profile[10],postcode,"PostCode verification");
 }  
 
 	
@@ -203,7 +200,49 @@ if (flag == false) {
 	 	
 	
 	
-	
+		public void webjourney1(String email) throws InterruptedException, IOException {
+			
+			 driver.manage().deleteAllCookies(); 
+			 
+	 
+	 		driver.get(getProp("weburl"));  
+	 		Thread.sleep(5000);
+	 
+	 		
+	 		click("xpath", ".//*[@id='prenav']/div[1]/ul/li[2]/a");
+	 		click("xpath", ".//*[@id='j_id0:j_id3:j_id11:j_id22:0:btnTopSubscribe']");
+	 	 
+	 	
+	 		type("id", "j_id0:j_id1:personal_details_form:user_email", email);
+	 		type("id", "j_id0:j_id1:personal_details_form:user_password", "password");
+	 		type("id", "j_id0:j_id1:personal_details_form:user_confirm_password", "password");
+		 
+		 
+			new Select(driver.findElement(By.id("j_id0:j_id1:personal_details_form:user_title"))).selectByVisibleText(title);
+			
+			type("id", "j_id0:j_id1:personal_details_form:user_first_name", firstName);
+			
+			type("id", "j_id0:j_id1:personal_details_form:user_last_name", lastName);
+	 
+			
+			new Select(driver.findElement(By.id("j_id0:j_id1:personal_details_form:lstDateofBirthDays"))).selectByVisibleText(day);
+			new Select(driver.findElement(By.id("j_id0:j_id1:personal_details_form:lstDateofBirthMonths"))).selectByVisibleText(month);
+			new Select(driver.findElement(By.id("j_id0:j_id1:personal_details_form:lstDateofBirthYears"))).selectByVisibleText(year);
+			driver.findElement(By.id("j_id0:j_id1:personal_details_form:user_postcode")).sendKeys(postcode);
+			driver.findElement(By.id("j_id0:j_id1:personal_details_form:user_address_line_1")).sendKeys("Flat 1");
+			driver.findElement(By.id("j_id0:j_id1:personal_details_form:user_address_line_2")).sendKeys("Forum House");
+			driver.findElement(By.id("j_id0:j_id1:personal_details_form:user_address_line_3")).sendKeys("Empire Way");
+			driver.findElement(By.id("j_id0:j_id1:personal_details_form:user_city")).sendKeys(city);
+			
+	 
+			click("id", "j_id0:j_id1:personal_details_form:user_accept_tAndCs");
+			
+			driver.findElement(By.id("ni-reg-btn-register")).submit();
+			Thread.sleep(10000);
+		}
+		
+		
+
 
 
 	}

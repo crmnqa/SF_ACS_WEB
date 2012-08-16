@@ -1,53 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="10" passed="10">
+<testng-results skipped="0" failed="1" total="14" passed="13">
   <reporter-output>
   </reporter-output>
-  <suite name="CRMN" duration-ms="244594" started-at="2012-08-16T14:54:26Z" finished-at="2012-08-16T14:58:31Z">
+  <suite name="CRMN" duration-ms="284478" started-at="2012-08-16T15:05:17Z" finished-at="2012-08-16T15:10:01Z">
     <groups>
       <group name="a">
-        <method signature="CSRjourney.A_custCreation()[pri:0, instance:ACS_CRMN.CSRjourney@1dfafd1]" name="A_custCreation" class="ACS_CRMN.CSRjourney"/>
-        <method signature="CSRjourney.B_custBankDetails()[pri:0, instance:ACS_CRMN.CSRjourney@1dfafd1]" name="B_custBankDetails" class="ACS_CRMN.CSRjourney"/>
-        <method signature="CSRjourney.C_CheckProfile()[pri:0, instance:ACS_CRMN.CSRjourney@1dfafd1]" name="C_CheckProfile" class="ACS_CRMN.CSRjourney"/>
-        <method signature="CSRjourney.D_CheckEntitlement()[pri:0, instance:ACS_CRMN.CSRjourney@1dfafd1]" name="D_CheckEntitlement" class="ACS_CRMN.CSRjourney"/>
-        <method signature="TLSjourney.A_TLSwebJourney()[pri:0, instance:ACS_CRMN.TLSjourney@329f3d]" name="A_TLSwebJourney" class="ACS_CRMN.TLSjourney"/>
-        <method signature="TLSjourney.B_TLScheckProfile()[pri:0, instance:ACS_CRMN.TLSjourney@329f3d]" name="B_TLScheckProfile" class="ACS_CRMN.TLSjourney"/>
-        <method signature="TLSjourney.D_CheckEntitlement()[pri:0, instance:ACS_CRMN.TLSjourney@329f3d]" name="D_CheckEntitlement" class="ACS_CRMN.TLSjourney"/>
-        <method signature="WebJourney.A_WebJourney1()[pri:0, instance:ACS_CRMN.WebJourney@6f7ce9]" name="A_WebJourney1" class="ACS_CRMN.WebJourney"/>
-        <method signature="WebJourney.B_CheckProfile()[pri:0, instance:ACS_CRMN.WebJourney@6f7ce9]" name="B_CheckProfile" class="ACS_CRMN.WebJourney"/>
-        <method signature="WebJourney.C_WebJourney2()[pri:0, instance:ACS_CRMN.WebJourney@6f7ce9]" name="C_WebJourney2" class="ACS_CRMN.WebJourney"/>
+        <method signature="CSRjourney.A_custCreation()[pri:0, instance:ACS_CRMN.CSRjourney@1749757]" name="A_custCreation" class="ACS_CRMN.CSRjourney"/>
+        <method signature="CSRjourney.B_custBankDetails()[pri:0, instance:ACS_CRMN.CSRjourney@1749757]" name="B_custBankDetails" class="ACS_CRMN.CSRjourney"/>
+        <method signature="CSRjourney.C_CheckProfile()[pri:0, instance:ACS_CRMN.CSRjourney@1749757]" name="C_CheckProfile" class="ACS_CRMN.CSRjourney"/>
+        <method signature="CSRjourney.D_CheckEntitlement()[pri:0, instance:ACS_CRMN.CSRjourney@1749757]" name="D_CheckEntitlement" class="ACS_CRMN.CSRjourney"/>
+        <method signature="TLSjourney.A_TLSwebJourney()[pri:0, instance:ACS_CRMN.TLSjourney@171bbc9]" name="A_TLSwebJourney" class="ACS_CRMN.TLSjourney"/>
+        <method signature="TLSjourney.B_TLScheckProfile()[pri:0, instance:ACS_CRMN.TLSjourney@171bbc9]" name="B_TLScheckProfile" class="ACS_CRMN.TLSjourney"/>
+        <method signature="TLSjourney.D_CheckEntitlement()[pri:0, instance:ACS_CRMN.TLSjourney@171bbc9]" name="D_CheckEntitlement" class="ACS_CRMN.TLSjourney"/>
+        <method signature="WebJourney.A_WebJourney1()[pri:0, instance:ACS_CRMN.WebJourney@8fce95]" name="A_WebJourney1" class="ACS_CRMN.WebJourney"/>
+        <method signature="WebJourney.B_CheckProfile()[pri:0, instance:ACS_CRMN.WebJourney@8fce95]" name="B_CheckProfile" class="ACS_CRMN.WebJourney"/>
+        <method signature="WebJourney.C_WebJourney2()[pri:0, instance:ACS_CRMN.WebJourney@8fce95]" name="C_WebJourney2" class="ACS_CRMN.WebJourney"/>
+        <method signature="WebJourney.D_CheckEntitlement()[pri:0, instance:ACS_CRMN.WebJourney@8fce95]" name="D_CheckEntitlement" class="ACS_CRMN.WebJourney"/>
       </group> <!-- a -->
     </groups>
-    <test name="Webjourney" duration-ms="244594" started-at="2012-08-16T14:54:26Z" finished-at="2012-08-16T14:58:31Z">
+    <test name="Webjourney" duration-ms="284478" started-at="2012-08-16T15:05:17Z" finished-at="2012-08-16T15:10:01Z">
       <class name="ACS_CRMN.WebJourney">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:ACS_CRMN.WebJourney@6f7ce9]" name="setUp" is-config="true" duration-ms="20668" started-at="2012-08-16T14:54:26Z" finished-at="2012-08-16T14:54:47Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:ACS_CRMN.WebJourney@8fce95]" name="setUp" is-config="true" duration-ms="41950" started-at="2012-08-16T15:05:17Z" finished-at="2012-08-16T15:05:59Z">
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="A_WebJourney1()[pri:0, instance:ACS_CRMN.WebJourney@6f7ce9]" name="A_WebJourney1" duration-ms="35626" started-at="2012-08-16T14:54:47Z" finished-at="2012-08-16T14:55:22Z">
+        <test-method status="PASS" signature="A_WebJourney1()[pri:0, instance:ACS_CRMN.WebJourney@8fce95]" name="A_WebJourney1" duration-ms="35609" started-at="2012-08-16T15:05:59Z" finished-at="2012-08-16T15:06:34Z">
         </test-method> <!-- A_WebJourney1 -->
-        <test-method status="PASS" signature="B_CheckProfile()[pri:0, instance:ACS_CRMN.WebJourney@6f7ce9]" name="B_CheckProfile" duration-ms="10898" started-at="2012-08-16T14:55:22Z" finished-at="2012-08-16T14:55:33Z">
+        <test-method status="PASS" signature="B_CheckProfile()[pri:0, instance:ACS_CRMN.WebJourney@8fce95]" name="B_CheckProfile" duration-ms="10965" started-at="2012-08-16T15:06:34Z" finished-at="2012-08-16T15:06:45Z">
         </test-method> <!-- B_CheckProfile -->
-        <test-method status="PASS" signature="C_WebJourney2()[pri:0, instance:ACS_CRMN.WebJourney@6f7ce9]" name="C_WebJourney2" duration-ms="11598" started-at="2012-08-16T14:55:33Z" finished-at="2012-08-16T14:55:45Z">
+        <test-method status="PASS" signature="C_WebJourney2()[pri:0, instance:ACS_CRMN.WebJourney@8fce95]" name="C_WebJourney2" duration-ms="11580" started-at="2012-08-16T15:06:45Z" finished-at="2012-08-16T15:06:57Z">
         </test-method> <!-- C_WebJourney2 -->
+        <test-method status="PASS" signature="D_CheckEntitlement()[pri:0, instance:ACS_CRMN.WebJourney@8fce95]" name="D_CheckEntitlement" duration-ms="5194" started-at="2012-08-16T15:06:57Z" finished-at="2012-08-16T15:07:02Z">
+        </test-method> <!-- D_CheckEntitlement -->
+        <test-method status="PASS" signature="E_WebJourneyEdit()[pri:0, instance:ACS_CRMN.WebJourney@8fce95]" name="E_WebJourneyEdit" duration-ms="34180" started-at="2012-08-16T15:07:02Z" finished-at="2012-08-16T15:07:36Z">
+        </test-method> <!-- E_WebJourneyEdit -->
+        <test-method status="FAIL" signature="F_checkProfile()[pri:0, instance:ACS_CRMN.WebJourney@8fce95]" name="F_checkProfile" duration-ms="5476" started-at="2012-08-16T15:07:36Z" finished-at="2012-08-16T15:07:42Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Profile after updation........ expected:<true> but was:<false>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Profile after updation........ expected:<true> but was:<false>
+	at org.testng.Assert.fail(Assert.java:89)
+	at org.testng.Assert.failNotEquals(Assert.java:489)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:281)
+	at ACS_CRMN.WebJourney.F_checkProfile(WebJourney.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:702)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:894)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1219)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
+	at org.testng.TestNG.run(TestNG.java:1030)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+        </test-method> <!-- F_checkProfile -->
+        <test-method status="PASS" signature="G_CheckEntitlement()[pri:0, instance:ACS_CRMN.WebJourney@8fce95]" name="G_CheckEntitlement" duration-ms="131" started-at="2012-08-16T15:07:42Z" finished-at="2012-08-16T15:07:42Z">
+        </test-method> <!-- G_CheckEntitlement -->
       </class> <!-- ACS_CRMN.WebJourney -->
       <class name="ACS_CRMN.CSRjourney">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:ACS_CRMN.CSRjourney@1dfafd1]" name="setUp" is-config="true" duration-ms="18902" started-at="2012-08-16T14:55:45Z" finished-at="2012-08-16T14:56:04Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:ACS_CRMN.CSRjourney@1749757]" name="setUp" is-config="true" duration-ms="16236" started-at="2012-08-16T15:07:42Z" finished-at="2012-08-16T15:07:58Z">
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="A_custCreation()[pri:0, instance:ACS_CRMN.CSRjourney@1dfafd1]" name="A_custCreation" duration-ms="38865" started-at="2012-08-16T14:56:04Z" finished-at="2012-08-16T14:56:43Z">
+        <test-method status="PASS" signature="A_custCreation()[pri:0, instance:ACS_CRMN.CSRjourney@1749757]" name="A_custCreation" duration-ms="37443" started-at="2012-08-16T15:07:58Z" finished-at="2012-08-16T15:08:35Z">
         </test-method> <!-- A_custCreation -->
-        <test-method status="PASS" signature="B_custBankDetails()[pri:0, instance:ACS_CRMN.CSRjourney@1dfafd1]" name="B_custBankDetails" duration-ms="44573" started-at="2012-08-16T14:56:43Z" finished-at="2012-08-16T14:57:27Z">
+        <test-method status="PASS" signature="B_custBankDetails()[pri:0, instance:ACS_CRMN.CSRjourney@1749757]" name="B_custBankDetails" duration-ms="21272" started-at="2012-08-16T15:08:35Z" finished-at="2012-08-16T15:08:57Z">
         </test-method> <!-- B_custBankDetails -->
-        <test-method status="PASS" signature="C_CheckProfile()[pri:0, instance:ACS_CRMN.CSRjourney@1dfafd1]" name="C_CheckProfile" duration-ms="5524" started-at="2012-08-16T14:57:27Z" finished-at="2012-08-16T14:57:33Z">
+        <test-method status="PASS" signature="C_CheckProfile()[pri:0, instance:ACS_CRMN.CSRjourney@1749757]" name="C_CheckProfile" duration-ms="5254" started-at="2012-08-16T15:08:57Z" finished-at="2012-08-16T15:09:02Z">
         </test-method> <!-- C_CheckProfile -->
-        <test-method status="PASS" signature="D_CheckEntitlement()[pri:0, instance:ACS_CRMN.CSRjourney@1dfafd1]" name="D_CheckEntitlement" duration-ms="310" started-at="2012-08-16T14:57:33Z" finished-at="2012-08-16T14:57:33Z">
+        <test-method status="PASS" signature="D_CheckEntitlement()[pri:0, instance:ACS_CRMN.CSRjourney@1749757]" name="D_CheckEntitlement" duration-ms="160" started-at="2012-08-16T15:09:02Z" finished-at="2012-08-16T15:09:02Z">
         </test-method> <!-- D_CheckEntitlement -->
       </class> <!-- ACS_CRMN.CSRjourney -->
       <class name="ACS_CRMN.TLSjourney">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:ACS_CRMN.TLSjourney@329f3d]" name="setUp" is-config="true" duration-ms="14375" started-at="2012-08-16T14:57:33Z" finished-at="2012-08-16T14:57:47Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:ACS_CRMN.TLSjourney@171bbc9]" name="setUp" is-config="true" duration-ms="14776" started-at="2012-08-16T15:09:02Z" finished-at="2012-08-16T15:09:17Z">
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="A_TLSwebJourney()[pri:0, instance:ACS_CRMN.TLSjourney@329f3d]" name="A_TLSwebJourney" duration-ms="27900" started-at="2012-08-16T14:57:47Z" finished-at="2012-08-16T14:58:15Z">
+        <test-method status="PASS" signature="A_TLSwebJourney()[pri:0, instance:ACS_CRMN.TLSjourney@171bbc9]" name="A_TLSwebJourney" duration-ms="28875" started-at="2012-08-16T15:09:17Z" finished-at="2012-08-16T15:09:46Z">
         </test-method> <!-- A_TLSwebJourney -->
-        <test-method status="PASS" signature="B_TLScheckProfile()[pri:0, instance:ACS_CRMN.TLSjourney@329f3d]" name="B_TLScheckProfile" duration-ms="10162" started-at="2012-08-16T14:58:15Z" finished-at="2012-08-16T14:58:25Z">
+        <test-method status="PASS" signature="B_TLScheckProfile()[pri:0, instance:ACS_CRMN.TLSjourney@171bbc9]" name="B_TLScheckProfile" duration-ms="10138" started-at="2012-08-16T15:09:46Z" finished-at="2012-08-16T15:09:56Z">
         </test-method> <!-- B_TLScheckProfile -->
-        <test-method status="PASS" signature="D_CheckEntitlement()[pri:0, instance:ACS_CRMN.TLSjourney@329f3d]" name="D_CheckEntitlement" duration-ms="5179" started-at="2012-08-16T14:58:25Z" finished-at="2012-08-16T14:58:31Z">
+        <test-method status="PASS" signature="D_CheckEntitlement()[pri:0, instance:ACS_CRMN.TLSjourney@171bbc9]" name="D_CheckEntitlement" duration-ms="5215" started-at="2012-08-16T15:09:56Z" finished-at="2012-08-16T15:10:01Z">
         </test-method> <!-- D_CheckEntitlement -->
       </class> <!-- ACS_CRMN.TLSjourney -->
     </test> <!-- Webjourney -->
