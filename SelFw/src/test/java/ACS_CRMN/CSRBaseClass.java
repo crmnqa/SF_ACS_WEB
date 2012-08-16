@@ -11,8 +11,8 @@ import org.testng.Assert;
 public class CSRBaseClass extends UtilitiesBaseClass {
 	
 	Properties properties = new Properties();
-	static String date =  date();
-		static String email =  emailid();  
+	String date =  date();
+	String email = "csr_" +  emailid();  
 	String gender = "Male";
 	String password = "Password123";
 	String title = "Mr";
@@ -55,12 +55,21 @@ public class CSRBaseClass extends UtilitiesBaseClass {
 		driver.findElement(By.id("password")).sendKeys(getProp("sfpass"));
 		driver.findElement(By.id("Login")).click();
 		Thread.sleep(10000);
+		
+		
+		
+		
 		driver.findElement(By.cssSelector("img.allTabsArrow")).click();
 		driver.findElement(By.linkText("Customers")).click();
 		driver.findElement(By.name("new")).click();
 		driver.findElement(By.cssSelector("#bottomButtonRow > input[name=\"save\"]")).click();
  
+
+		
 		driver.findElement(By.id("PersonEmail")).sendKeys(email);
+		
+		
+		
 	 
 		driver.findElement(By.id("name_firstacc2")).sendKeys(firstName);
  
@@ -125,7 +134,7 @@ driver.findElement(By.id("csr-paynow-dd")).click();
 		boolean flag = true;
 
    	  for ( int i = 0 ; i<=10; i ++)
-	  {System.out.println("ALL!!!!!!!!!!!!!!!!!!!!!!!!!!!!!:"+prof[i]  );
+	  {//System.out.println("ALL!!!!!!!!!!!!!!!!!!!!!!!!!!!!!:"+prof[i]  );
    	  if  (exp[i].equals(prof[i])  )  {
    	  System.out.println("Matched    :"+prof[i]+ "  :------------:   " +exp[i]); }	
    	  else if ((exp[i].equals("External_ID")))   {

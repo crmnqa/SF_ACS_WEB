@@ -7,15 +7,14 @@
       <class name="ACS_CRMN.WebJourney">
      <methods>
  
- 
-									    
-									        <include name="A_WebJourney1"/>
+ 											<include name="A_WebJourney1"/>
 									        <include name="B_CheckProfile"/>
 									        <include name="C_WebJourney2"/>
-									        <include name="D_CheckEntitlement"/>
+											<include name="D_CheckEntitlement"/>
 									        <include name="E_WebJourneyEdit"/>
 									        <include name="F_checkProfile"/>
-									        <include name="G_CheckEntitlement"/>   
+									        <include name="G_CheckEntitlement"/>   									    
+									       
 									        
         
  </methods> 
