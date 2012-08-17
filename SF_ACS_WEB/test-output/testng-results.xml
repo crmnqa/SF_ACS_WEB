@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="55495" started-at="2012-08-17T14:40:12Z" finished-at="2012-08-17T14:41:08Z">
+    <groups>
+      <group name="a">
+        <method signature="TLSjourney.A_TLSwebJourney()[pri:0, instance:ACS_CRMN.TLSjourney@789144]" name="A_TLSwebJourney" class="ACS_CRMN.TLSjourney"/>
+        <method signature="TLSjourney.B_TLScheckProfile()[pri:0, instance:ACS_CRMN.TLSjourney@789144]" name="B_TLScheckProfile" class="ACS_CRMN.TLSjourney"/>
+        <method signature="TLSjourney.D_CheckEntitlement()[pri:0, instance:ACS_CRMN.TLSjourney@789144]" name="D_CheckEntitlement" class="ACS_CRMN.TLSjourney"/>
+      </group> <!-- a -->
+    </groups>
+    <test name="Default test" duration-ms="55495" started-at="2012-08-17T14:40:12Z" finished-at="2012-08-17T14:41:08Z">
+      <class name="ACS_CRMN.TLSjourney">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:ACS_CRMN.TLSjourney@789144]" name="setUp" is-config="true" duration-ms="15066" started-at="2012-08-17T14:40:12Z" finished-at="2012-08-17T14:40:27Z">
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="A_TLSwebJourney()[pri:0, instance:ACS_CRMN.TLSjourney@789144]" name="A_TLSwebJourney" duration-ms="24103" started-at="2012-08-17T14:40:27Z" finished-at="2012-08-17T14:40:51Z">
+        </test-method> <!-- A_TLSwebJourney -->
+        <test-method status="PASS" signature="B_TLScheckProfile()[pri:0, instance:ACS_CRMN.TLSjourney@789144]" name="B_TLScheckProfile" duration-ms="11052" started-at="2012-08-17T14:40:51Z" finished-at="2012-08-17T14:41:02Z">
+        </test-method> <!-- B_TLScheckProfile -->
+        <test-method status="PASS" signature="D_CheckEntitlement()[pri:0, instance:ACS_CRMN.TLSjourney@789144]" name="D_CheckEntitlement" duration-ms="5260" started-at="2012-08-17T14:41:02Z" finished-at="2012-08-17T14:41:08Z">
+        </test-method> <!-- D_CheckEntitlement -->
+      </class> <!-- ACS_CRMN.TLSjourney -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

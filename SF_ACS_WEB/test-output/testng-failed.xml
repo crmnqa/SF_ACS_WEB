@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)" preserve-order="true">
+    <classes>
+      <class name="ACS_CRMN.TLSjourney">
+        <methods>
+          <include name="A_TLSwebJourney"/>
+          <include name="setUp"/>
+          <include name="B_TLScheckProfile"/>
+          <include name="D_CheckEntitlement"/>
+        </methods>
+      </class> <!-- ACS_CRMN.TLSjourney -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

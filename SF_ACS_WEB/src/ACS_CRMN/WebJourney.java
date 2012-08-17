@@ -72,7 +72,7 @@ public class  WebJourney extends WebJourneyBaseClass {
  	}
  	 	
  	@Test  
-	public void F_checkProfile() throws Exception {
+	public void F_Check_ACS_EditJourney_Profile() throws Exception {
  		Thread.sleep(5000);
  		System.out.println("Step 6:-- Call out ACS to compare updated values in web journey....." ); 		
  		String[] exp =  {"tnl", email,"External_ID", u_lastName, email, u_DispName, u_firstName, u_city, country, u_dob, postcode } ;
@@ -92,7 +92,7 @@ public class  WebJourney extends WebJourneyBaseClass {
  	    Assert.assertEquals( EntitlementMatch(entitlement),true,"Entitlements  before updation...should be zero......."); 
  	}
  	
- 	 
+ 	 //
   
  	
  

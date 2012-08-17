@@ -12,7 +12,7 @@
 									        <include name="C_WebJourney2"/>
 											<include name="D_CheckEntitlement"/>
 									        <include name="E_WebJourneyEdit"/>
-									        <include name="F_checkProfile"/>
+									        <include name="F_Check_ACS_EditJourney_Profile"/>
 									        <include name="G_CheckEntitlement"/>   									    
 									       
 									        

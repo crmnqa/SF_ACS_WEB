@@ -19,7 +19,7 @@ public class  TLSjourney extends TLSbaseClass {
 	    
   	@Test (groups = "a") 
 	public void A_TLSwebJourney() throws Exception {
- 	System.out.println("Step 1:-- Web journey - PART-1 started...stops beofre filling payment details....... " + "User ID is:---" + email); 	  	  
+ 	System.out.println("Step 1:-- TLS_Web journey - PART-1 started.......... " + "TLS User ID is:---" + email); 	  	  
  	TLSwebjourney1(email);
  	
  	}

@@ -3,11 +3,7 @@
   <groupId>tutorials</groupId>
   <artifactId>tutorials</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <!--   <parent>
-    <groupId>com.betfair</groupId>
-    <artifactId>betfair-pom</artifactId>
-    <version>3.1</version>
-  </parent> -->
+ 
     <pluginRepositories>
         <pluginRepository>
             <id>eviwarePluginRepository</id>
@@ -42,7 +38,7 @@
 					
 				
 					<suiteXmlFiles>
-                     <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
+                     <suiteXmlFile>testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
 		  
 		        </configuration>
@@ -56,6 +52,7 @@
                     <target>1.5</target>
                      </configuration>
             </plugin>  
+            
             
             
           <plugin>
@@ -134,8 +131,7 @@
         <dependency>
         	<groupId>org.testng</groupId>
         	<artifactId>testng</artifactId>
-        	<version>5.11</version>
-        	<classifier>jdk15</classifier>
+        	<version>6.1.1</version>
         	<scope>test</scope>
         </dependency>
        

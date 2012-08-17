@@ -49,7 +49,7 @@ public class TLSbaseClass extends UtilitiesBaseClass {
 
  
 		driver.findElement(By.id("tls_voucher_text")).sendKeys("1111-111111");
-		driver.findElement(By.id("mfa4")).click();
+		driver.findElement(By.xpath(".//*[@id='tls-voucher-form']/div[4]/input")).click();
  
 		driver.findElement(By.id("j_id0:j_id1:personal_details_form:user_email")).sendKeys(email);
 		 

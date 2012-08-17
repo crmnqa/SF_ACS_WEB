@@ -29,9 +29,9 @@
 										 
 										        <!--   CSR: END to END journey -->
 										        <include name="A_custCreation" />
+										         <include name="C_CheckProfile" />
 										        <include name="B_custBankDetails" />
-										        <include name="C_CheckProfile" />
-										        <include name="D_CheckEntitlement" />
+										         <include name="D_CheckEntitlement" />
 										        
         
  </methods>
