@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -36,8 +36,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-passed">Default suite</span>
+            <a href="#" class="navigator-link" panel-name="suite-CRMN">
+              <span class="suite-name border-failed">CRMN</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -47,37 +47,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\JVendi\AppData\Local\Temp\testng-eclipse--485172972\testng-customsuite.xml</span>
+                  <a href="#" class="navigator-link " panel-name="test-xml-CRMN">
+                    <span>C:\SE\Automation\WorkSpace\JAGS_SELENIUM_JAVA\SF_ACS_WEB\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="testlist-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="testlist-CRMN">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="group-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="group-CRMN">
                     <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="times-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="times-CRMN">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="reporter-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="reporter-CRMN">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="ignored-methods-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-CRMN">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="chronological-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="chronological-CRMN">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -90,31 +90,90 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">13 methods, 1 failed,   12 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-CRMN" class="hide-methods failed suite-CRMN"> (hide)</a> <!-- hide-methods failed suite-CRMN -->
+                      <a href="#" panel-name="suite-CRMN" class="show-methods failed suite-CRMN"> (show)</a> <!-- show-methods failed suite-CRMN -->
+                    </span>
+                    <div class="method-list-content failed suite-CRMN">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CRMN" title="ACS_CRMN.CSRjourney" hash-for-method="D_CheckEntitlement">D_CheckEntitlement</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-CRMN -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-CRMN" class="hide-methods passed suite-CRMN"> (hide)</a> <!-- hide-methods passed suite-CRMN -->
+                      <a href="#" panel-name="suite-CRMN" class="show-methods passed suite-CRMN"> (show)</a> <!-- show-methods passed suite-CRMN -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content passed suite-CRMN">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="ACS_CRMN.TLSjourney" hash-for-method="A_TLSwebJourney">A_TLSwebJourney</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-CRMN" title="ACS_CRMN.TLSjourney" hash-for-method="A_TLSwebJourney">A_TLSwebJourney</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="ACS_CRMN.TLSjourney" hash-for-method="B_TLScheckProfile">B_TLScheckProfile</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-CRMN" title="ACS_CRMN.WebJourney" hash-for-method="A_WebJourney1">A_WebJourney1</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="ACS_CRMN.TLSjourney" hash-for-method="D_CheckEntitlement">D_CheckEntitlement</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-CRMN" title="ACS_CRMN.CSRjourney" hash-for-method="A_custCreation">A_custCreation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CRMN" title="ACS_CRMN.WebJourney" hash-for-method="B_CheckProfile">B_CheckProfile</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CRMN" title="ACS_CRMN.TLSjourney" hash-for-method="B_TLScheckProfile">B_TLScheckProfile</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CRMN" title="ACS_CRMN.CSRjourney" hash-for-method="B_custBankDetails">B_custBankDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CRMN" title="ACS_CRMN.CSRjourney" hash-for-method="C_CheckProfile">C_CheckProfile</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CRMN" title="ACS_CRMN.WebJourney" hash-for-method="C_WebJourney2">C_WebJourney2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CRMN" title="ACS_CRMN.TLSjourney" hash-for-method="D_CheckEntitlement">D_CheckEntitlement</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CRMN" title="ACS_CRMN.WebJourney" hash-for-method="D_CheckEntitlement">D_CheckEntitlement</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CRMN" title="ACS_CRMN.WebJourney" hash-for-method="E_WebJourneyEdit">E_WebJourneyEdit</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CRMN" title="ACS_CRMN.WebJourney" hash-for-method="G_CheckEntitlement">G_CheckEntitlement</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-CRMN -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -125,8 +184,54 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+        <div panel-name="suite-CRMN" class="panel CRMN">
+          <div class="suite-CRMN-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">ACS_CRMN.CSRjourney</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="D_CheckEntitlement">
+                  </a> <!-- D_CheckEntitlement -->
+                  <span class="method-name">D_CheckEntitlement</span>
+                  <div class="stack-trace"><b>"Entitlements  before updation...should be zero....... expected:<true> but was:<false>"</b><br>org.testng.Assert.fail(Assert.java:89)<br>org.testng.Assert.failNotEquals(Assert.java:489)<br>org.testng.Assert.assertEquals(Assert.java:118)<br>org.testng.Assert.assertEquals(Assert.java:281)<br>ACS_CRMN.CSRjourney.D_CheckEntitlement(CSRjourney.java:61)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br>java.lang.reflect.Method.invoke(Unknown Source)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:702)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:894)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1219)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1122)<br>org.testng.TestNG.run(TestNG.java:1030)<br>org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)<br>org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)<br>org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)<br>
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CRMN-class-failed -->
+          <div class="suite-CRMN-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">ACS_CRMN.CSRjourney</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="A_custCreation">
+                  </a> <!-- A_custCreation -->
+                  <span class="method-name">A_custCreation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="B_custBankDetails">
+                  </a> <!-- B_custBankDetails -->
+                  <span class="method-name">B_custBankDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="C_CheckProfile">
+                  </a> <!-- C_CheckProfile -->
+                  <span class="method-name">C_CheckProfile</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CRMN-class-passed -->
+          <div class="suite-CRMN-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">ACS_CRMN.TLSjourney</span>
@@ -154,41 +259,116 @@
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
-        </div> <!-- panel Default_suite -->
-        <div panel-name="test-xml-Default_suite" class="panel">
+          </div> <!-- suite-CRMN-class-passed -->
+          <div class="suite-CRMN-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">ACS_CRMN.WebJourney</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="A_WebJourney1">
+                  </a> <!-- A_WebJourney1 -->
+                  <span class="method-name">A_WebJourney1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="B_CheckProfile">
+                  </a> <!-- B_CheckProfile -->
+                  <span class="method-name">B_CheckProfile</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="C_WebJourney2">
+                  </a> <!-- C_WebJourney2 -->
+                  <span class="method-name">C_WebJourney2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="D_CheckEntitlement">
+                  </a> <!-- D_CheckEntitlement -->
+                  <span class="method-name">D_CheckEntitlement</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="E_WebJourneyEdit">
+                  </a> <!-- E_WebJourneyEdit -->
+                  <span class="method-name">E_WebJourneyEdit</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="G_CheckEntitlement">
+                  </a> <!-- G_CheckEntitlement -->
+                  <span class="method-name">G_CheckEntitlement</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CRMN-class-passed -->
+        </div> <!-- panel CRMN -->
+        <div panel-name="test-xml-CRMN" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\JVendi\AppData\Local\Temp\testng-eclipse--485172972\testng-customsuite.xml</span>
+            <span class="header-content">C:\SE\Automation\WorkSpace\JAGS_SELENIUM_JAVA\SF_ACS_WEB\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Default suite&quot;&gt;
-  &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot; preserve-order=&quot;true&quot;&gt;
+&lt;suite name=&quot;CRMN&quot; parallel=&quot;none&quot;&gt;
+  &lt;test name=&quot;Webjourney&quot; preserve-order=&quot;true&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;ACS_CRMN.TLSjourney&quot;/&gt;
+      &lt;class name=&quot;ACS_CRMN.WebJourney&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;A_WebJourney1&quot;/&gt;
+          &lt;include name=&quot;B_CheckProfile&quot;/&gt;
+          &lt;include name=&quot;C_WebJourney2&quot;/&gt;
+          &lt;include name=&quot;D_CheckEntitlement&quot;/&gt;
+          &lt;include name=&quot;E_WebJourneyEdit&quot;/&gt;
+          &lt;include name=&quot;F_checkProfile&quot;/&gt;
+          &lt;include name=&quot;G_CheckEntitlement&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- ACS_CRMN.WebJourney --&gt;
+      &lt;class name=&quot;ACS_CRMN.CSRjourney&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;A_custCreation&quot;/&gt;
+          &lt;include name=&quot;C_CheckProfile&quot;/&gt;
+          &lt;include name=&quot;B_custBankDetails&quot;/&gt;
+          &lt;include name=&quot;D_CheckEntitlement&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- ACS_CRMN.CSRjourney --&gt;
+      &lt;class name=&quot;ACS_CRMN.TLSjourney&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;A_TLSwebJourney&quot;/&gt;
+          &lt;include name=&quot;B_TLScheckProfile&quot;/&gt;
+          &lt;include name=&quot;D_CheckEntitlement&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- ACS_CRMN.TLSjourney --&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
-&lt;/suite&gt; &lt;!-- Default suite --&gt;
+  &lt;/test&gt; &lt;!-- Webjourney --&gt;
+&lt;/suite&gt; &lt;!-- CRMN --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Default_suite" class="panel">
+        <div panel-name="testlist-CRMN" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Default suite</span>
+            <span class="header-content">Tests for CRMN</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">Webjourney (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Default_suite" class="panel">
+        <div panel-name="group-CRMN" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Default suite</span>
+            <span class="header-content">Groups for CRMN</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="test-group">
@@ -199,7 +379,31 @@
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
+                <span class="method-in-group-name">A_WebJourney1</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">A_custCreation</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">B_CheckProfile</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
                 <span class="method-in-group-name">B_TLScheckProfile</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">B_custBankDetails</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">C_CheckProfile</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">C_WebJourney2</span>
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
@@ -209,79 +413,182 @@
             </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Default_suite" class="panel">
+        <div panel-name="times-CRMN" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Default suite</span>
+            <span class="header-content">Times for CRMN</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Default_suite');
-function tableData_Default_suite() {
+suiteTableInitFunctions.push('tableData_CRMN');
+function tableData_CRMN() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(13);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'A_TLSwebJourney')
-data.setCell(0, 2, 'ACS_CRMN.TLSjourney')
-data.setCell(0, 3, 24103);
+data.setCell(0, 1, 'A_WebJourney1')
+data.setCell(0, 2, 'ACS_CRMN.WebJourney')
+data.setCell(0, 3, 37407);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'B_TLScheckProfile')
-data.setCell(1, 2, 'ACS_CRMN.TLSjourney')
-data.setCell(1, 3, 11052);
+data.setCell(1, 1, 'E_WebJourneyEdit')
+data.setCell(1, 2, 'ACS_CRMN.WebJourney')
+data.setCell(1, 3, 37387);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'D_CheckEntitlement')
-data.setCell(2, 2, 'ACS_CRMN.TLSjourney')
-data.setCell(2, 3, 5260);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+data.setCell(2, 1, 'A_custCreation')
+data.setCell(2, 2, 'ACS_CRMN.CSRjourney')
+data.setCell(2, 3, 33785);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'A_TLSwebJourney')
+data.setCell(3, 2, 'ACS_CRMN.TLSjourney')
+data.setCell(3, 3, 22441);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'B_custBankDetails')
+data.setCell(4, 2, 'ACS_CRMN.CSRjourney')
+data.setCell(4, 3, 15297);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'B_CheckProfile')
+data.setCell(5, 2, 'ACS_CRMN.WebJourney')
+data.setCell(5, 3, 10935);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'C_WebJourney2')
+data.setCell(6, 2, 'ACS_CRMN.WebJourney')
+data.setCell(6, 3, 10532);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'B_TLScheckProfile')
+data.setCell(7, 2, 'ACS_CRMN.TLSjourney')
+data.setCell(7, 3, 10157);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'D_CheckEntitlement')
+data.setCell(8, 2, 'ACS_CRMN.TLSjourney')
+data.setCell(8, 3, 5346);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'D_CheckEntitlement')
+data.setCell(9, 2, 'ACS_CRMN.WebJourney')
+data.setCell(9, 3, 5335);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'C_CheckProfile')
+data.setCell(10, 2, 'ACS_CRMN.CSRjourney')
+data.setCell(10, 3, 5199);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'D_CheckEntitlement')
+data.setCell(11, 2, 'ACS_CRMN.CSRjourney')
+data.setCell(11, 3, 203);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'G_CheckEntitlement')
+data.setCell(12, 2, 'ACS_CRMN.WebJourney')
+data.setCell(12, 3, 173);
+window.suiteTableData['CRMN']= { tableData: data, tableDiv: 'times-div-CRMN'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 40 seconds</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
+              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <div id="times-div-CRMN">
+              </div> <!-- times-div-CRMN -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Default_suite" class="panel">
+        <div panel-name="reporter-CRMN" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Default suite</span>
+            <span class="header-content">Reporter output for CRMN</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Default_suite" class="panel">
+        <div panel-name="ignored-methods-CRMN" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">1 ignored method</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">ACS_CRMN.WebJourney</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">F_Check_ACS_EditJourney_Profile</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Default_suite" class="panel">
+        <div panel-name="chronological-CRMN" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">ACS_CRMN.TLSjourney</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">ACS_CRMN.WebJourney</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">A_TLSwebJourney</span>
-                <span class="method-start">15067 ms</span>
+                <span class="method-name">A_WebJourney1</span>
+                <span class="method-start">16475 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">B_TLScheckProfile</span>
-                <span class="method-start">39173 ms</span>
+                <span class="method-name">B_CheckProfile</span>
+                <span class="method-start">53882 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">C_WebJourney2</span>
+                <span class="method-start">64819 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">D_CheckEntitlement</span>
-                <span class="method-start">50226 ms</span>
+                <span class="method-start">75351 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">E_WebJourneyEdit</span>
+                <span class="method-start">80686 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">G_CheckEntitlement</span>
+                <span class="method-start">118073 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">ACS_CRMN.CSRjourney</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">118248 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">A_custCreation</span>
+                <span class="method-start">134557 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">C_CheckProfile</span>
+                <span class="method-start">168343 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">B_custBankDetails</span>
+                <span class="method-start">173544 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">D_CheckEntitlement</span>
+                <span class="method-start">188841 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">ACS_CRMN.TLSjourney</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">189046 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">A_TLSwebJourney</span>
+                <span class="method-start">201156 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">B_TLScheckProfile</span>
+                <span class="method-start">223598 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">D_CheckEntitlement</span>
+                <span class="method-start">233757 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
