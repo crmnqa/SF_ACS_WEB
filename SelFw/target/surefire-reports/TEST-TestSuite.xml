@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite failures="14" time="76.539" errors="0" skipped="0" tests="14" name="TestSuite">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.7.0_06\jre\bin"/>
+    <property name="java.vm.version" value="23.2-b09"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) Client VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="GB"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\SE\Automation\WorkSpace\JAGS_SELENIUM_JAVA\SelFw"/>
+    <property name="java.runtime.version" value="1.7.0_06-b24"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="basedir" value="C:\SE\Automation\WorkSpace\JAGS_SELENIUM_JAVA\SelFw"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.7.0_06\jre\lib\endorsed"/>
+    <property name="os.arch" value="x86"/>
+    <property name="surefire.real.class.path" value="C:\Users\JVendi\AppData\Local\Temp\surefirebooter1129322056744695048.jar"/>
+    <property name="java.io.tmpdir" value="C:\Users\JVendi\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.7.0_06\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\QuickTime\QTSystem\;C:\Program Files\Citrix\system32\;C:\SE\MAVEN\bin;C:\Program Files\Java\jdk1.7.0_06\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\QuickTime\QTSystem\;C:\Program Files\Citrix\system32\; C:\SE\MAVEN\bin;C:\Program Files\Java\jdk1.7.0_06\bin;."/>
+    <property name="surefire.test.class.path" value="C:\SE\Automation\WorkSpace\JAGS_SELENIUM_JAVA\SelFw\target\test-classes;C:\SE\Automation\WorkSpace\JAGS_SELENIUM_JAVA\SelFw\target\classes;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\org\codehaus\jackson\jackson-mapper-asl\1.8.5\jackson-mapper-asl-1.8.5.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\org\codehaus\jackson\jackson-core-asl\1.8.5\jackson-core-asl-1.8.5.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\com\jayway\restassured\rest-assured\1.6.2\rest-assured-1.6.2.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\org\codehaus\groovy\groovy\1.8.4\groovy-1.8.4.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\asm\asm\3.2\asm-3.2.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\asm\asm-commons\3.2\asm-commons-3.2.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\asm\asm-util\3.2\asm-util-3.2.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\asm\asm-analysis\3.2\asm-analysis-3.2.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\asm\asm-tree\3.2\asm-tree-3.2.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\org\apache\httpcomponents\httpmime\4.1.3\httpmime-4.1.3.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\org\hamcrest\hamcrest-core\1.2.1\hamcrest-core-1.2.1.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\org\hamcrest\hamcrest-library\1.2.1\hamcrest-library-1.2.1.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\commons-collections\commons-collections\3.2.1\commons-collections-3.2.1.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\org\apache\commons\commons-lang3\3.1\commons-lang3-3.1.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\com\sun\jersey\jersey-client\1.8\jersey-client-1.8.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\com\sun\jersey\jersey-core\1.8\jersey-core-1.8.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\org\apache\httpcomponents\httpclient\4.1.1\httpclient-4.1.1.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\org\apache\httpcomponents\httpcore\4.1\httpcore-4.1.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\commons-codec\commons-codec\1.4\commons-codec-1.4.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\org\testng\testng\5.11\testng-5.11-jdk15.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\org\seleniumhq\selenium\selenium-java\2.24.1\selenium-java-2.24.1.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\org\seleniumhq\selenium\selenium-android-driver\2.24.1\selenium-android-driver-2.24.1.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\2.24.1\selenium-chrome-driver-2.24.1.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\org\seleniumhq\selenium\selenium-htmlunit-driver\2.24.1\selenium-htmlunit-driver-2.24.1.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\org\seleniumhq\selenium\selenium-api\2.24.1\selenium-api-2.24.1.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\net\sourceforge\htmlunit\htmlunit\2.9\htmlunit-2.9.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\xalan\xalan\2.7.1\xalan-2.7.1.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\xalan\serializer\2.7.1\serializer-2.7.1.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\net\sourceforge\htmlunit\htmlunit-core-js\2.9\htmlunit-core-js-2.9.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\xerces\xercesImpl\2.9.1\xercesImpl-2.9.1.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\xml-apis\xml-apis\1.3.04\xml-apis-1.3.04.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\net\sourceforge\nekohtml\nekohtml\1.9.15\nekohtml-1.9.15.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\net\sourceforge\cssparser\cssparser\0.9.5\cssparser-0.9.5.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\org\w3c\css\sac\1.3\sac-1.3.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\2.24.1\selenium-ie-driver-2.24.1.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\net\java\dev\jna\jna\3.4.0\jna-3.4.0.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\net\java\dev\jna\platform\3.4.0\platform-3.4.0.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\org\seleniumhq\selenium\selenium-iphone-driver\2.24.1\selenium-iphone-driver-2.24.1.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\2.24.1\selenium-safari-driver-2.24.1.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\org\seleniumhq\selenium\selenium-support\2.24.1\selenium-support-2.24.1.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\org\webbitserver\webbit\0.4.6\webbit-0.4.6.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\org\jboss\netty\netty\3.2.7.Final\netty-3.2.7.Final.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\org\seleniumhq\selenium\selenium-server\2.24.1\selenium-server-2.24.1.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.47\bcprov-jdk15on-1.47.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\mx4j\mx4j-tools\3.0.1\mx4j-tools-3.0.1.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\org\mortbay\jetty\servlet-api-2.5\6.1.9\servlet-api-2.5-6.1.9.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\org\seleniumhq\selenium\jetty-repacked\7.6.1\jetty-repacked-7.6.1.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\net\jcip\jcip-annotations\1.0\jcip-annotations-1.0.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\org\yaml\snakeyaml\1.8\snakeyaml-1.8.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\2.24.1\selenium-firefox-driver-2.24.1.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\2.24.1\selenium-remote-driver-2.24.1.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\cglib\cglib-nodep\2.1_3\cglib-nodep-2.1_3.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\org\json\json\20080701\json-20080701.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\com\google\guava\guava\12.0\guava-12.0.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\commons-io\commons-io\2.0.1\commons-io-2.0.1.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\org\apache\commons\commons-exec\1.1\commons-exec-1.1.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\commons-httpclient\commons-httpclient\3.1\commons-httpclient-3.1.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\com\healthmarketscience\jackcess\jackcess\1.1.18\jackcess-1.1.18.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\commons-lang\commons-lang\2.0\commons-lang-2.0.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\junit\junit\4.10\junit-4.10.jar;"/>
+    <property name="app.env" value=""/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="51.0"/>
+    <property name="sun.management.compiler" value="HotSpot Client Compiler"/>
+    <property name="os.version" value="6.1"/>
+    <property name="user.home" value="\\newsint.internal\userdata\central\useri-l\profile\JVendi"/>
+    <property name="user.timezone" value="Europe/London"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.7"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="JVendi"/>
+    <property name="java.class.path" value="C:\SE\Automation\WorkSpace\JAGS_SELENIUM_JAVA\SelFw\target\test-classes;C:\SE\Automation\WorkSpace\JAGS_SELENIUM_JAVA\SelFw\target\classes;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\org\codehaus\jackson\jackson-mapper-asl\1.8.5\jackson-mapper-asl-1.8.5.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\org\codehaus\jackson\jackson-core-asl\1.8.5\jackson-core-asl-1.8.5.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\com\jayway\restassured\rest-assured\1.6.2\rest-assured-1.6.2.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\org\codehaus\groovy\groovy\1.8.4\groovy-1.8.4.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\asm\asm\3.2\asm-3.2.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\asm\asm-commons\3.2\asm-commons-3.2.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\asm\asm-util\3.2\asm-util-3.2.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\asm\asm-analysis\3.2\asm-analysis-3.2.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\asm\asm-tree\3.2\asm-tree-3.2.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\org\apache\httpcomponents\httpmime\4.1.3\httpmime-4.1.3.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\org\hamcrest\hamcrest-core\1.2.1\hamcrest-core-1.2.1.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\org\hamcrest\hamcrest-library\1.2.1\hamcrest-library-1.2.1.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\commons-collections\commons-collections\3.2.1\commons-collections-3.2.1.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\org\apache\commons\commons-lang3\3.1\commons-lang3-3.1.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\com\sun\jersey\jersey-client\1.8\jersey-client-1.8.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\com\sun\jersey\jersey-core\1.8\jersey-core-1.8.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\org\apache\httpcomponents\httpclient\4.1.1\httpclient-4.1.1.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\org\apache\httpcomponents\httpcore\4.1\httpcore-4.1.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\commons-codec\commons-codec\1.4\commons-codec-1.4.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\org\testng\testng\5.11\testng-5.11-jdk15.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\org\seleniumhq\selenium\selenium-java\2.24.1\selenium-java-2.24.1.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\org\seleniumhq\selenium\selenium-android-driver\2.24.1\selenium-android-driver-2.24.1.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\2.24.1\selenium-chrome-driver-2.24.1.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\org\seleniumhq\selenium\selenium-htmlunit-driver\2.24.1\selenium-htmlunit-driver-2.24.1.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\org\seleniumhq\selenium\selenium-api\2.24.1\selenium-api-2.24.1.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\net\sourceforge\htmlunit\htmlunit\2.9\htmlunit-2.9.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\xalan\xalan\2.7.1\xalan-2.7.1.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\xalan\serializer\2.7.1\serializer-2.7.1.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\net\sourceforge\htmlunit\htmlunit-core-js\2.9\htmlunit-core-js-2.9.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\xerces\xercesImpl\2.9.1\xercesImpl-2.9.1.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\xml-apis\xml-apis\1.3.04\xml-apis-1.3.04.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\net\sourceforge\nekohtml\nekohtml\1.9.15\nekohtml-1.9.15.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\net\sourceforge\cssparser\cssparser\0.9.5\cssparser-0.9.5.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\org\w3c\css\sac\1.3\sac-1.3.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\2.24.1\selenium-ie-driver-2.24.1.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\net\java\dev\jna\jna\3.4.0\jna-3.4.0.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\net\java\dev\jna\platform\3.4.0\platform-3.4.0.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\org\seleniumhq\selenium\selenium-iphone-driver\2.24.1\selenium-iphone-driver-2.24.1.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\2.24.1\selenium-safari-driver-2.24.1.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\org\seleniumhq\selenium\selenium-support\2.24.1\selenium-support-2.24.1.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\org\webbitserver\webbit\0.4.6\webbit-0.4.6.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\org\jboss\netty\netty\3.2.7.Final\netty-3.2.7.Final.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\org\seleniumhq\selenium\selenium-server\2.24.1\selenium-server-2.24.1.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.47\bcprov-jdk15on-1.47.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\mx4j\mx4j-tools\3.0.1\mx4j-tools-3.0.1.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\org\mortbay\jetty\servlet-api-2.5\6.1.9\servlet-api-2.5-6.1.9.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\org\seleniumhq\selenium\jetty-repacked\7.6.1\jetty-repacked-7.6.1.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\net\jcip\jcip-annotations\1.0\jcip-annotations-1.0.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\org\yaml\snakeyaml\1.8\snakeyaml-1.8.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\2.24.1\selenium-firefox-driver-2.24.1.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\2.24.1\selenium-remote-driver-2.24.1.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\cglib\cglib-nodep\2.1_3\cglib-nodep-2.1_3.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\org\json\json\20080701\json-20080701.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\com\google\guava\guava\12.0\guava-12.0.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\commons-io\commons-io\2.0.1\commons-io-2.0.1.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\org\apache\commons\commons-exec\1.1\commons-exec-1.1.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\commons-httpclient\commons-httpclient\3.1\commons-httpclient-3.1.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\com\healthmarketscience\jackcess\jackcess\1.1.18\jackcess-1.1.18.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\commons-lang\commons-lang\2.0\commons-lang-2.0.jar;\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository\junit\junit\4.10\junit-4.10.jar;"/>
+    <property name="java.vm.specification.version" value="1.7"/>
+    <property name="sun.arch.data.model" value="32"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.7.0_06\jre"/>
+    <property name="sun.java.command" value="C:\Users\JVendi\AppData\Local\Temp\surefirebooter1129322056744695048.jar C:\Users\JVendi\AppData\Local\Temp\surefire7419023830455185076tmp C:\Users\JVendi\AppData\Local\Temp\surefire5084183322076613010tmp"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="1.7.0_06"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.7.0_06\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.7.0_06\jre\lib\resources.jar;C:\Program Files\Java\jdk1.7.0_06\jre\lib\rt.jar;C:\Program Files\Java\jdk1.7.0_06\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.7.0_06\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.7.0_06\jre\lib\jce.jar;C:\Program Files\Java\jdk1.7.0_06\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.7.0_06\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.7.0_06\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="localRepository" value="\\newsint.internal\userdata\central\useri-l\profile\JVendi\.m2\repository"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
+  </properties>
+  <testcase time="11.054" classname="ACS_CRMN.CSRjourney" name="A_custCreation">
+    <failure message="Error communicating with the remote browser. It may have died.
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_06&apos;
+Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.remote.UnreachableBrowserException">org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_06&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:467)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:242)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:271)
+	at org.openqa.selenium.By$ById.findElement(By.java:215)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:234)
+	at ACS_CRMN.CSRBaseClass.custCreation(CSRBaseClass.java:53)
+	at ACS_CRMN.CSRjourney.A_custCreation(CSRjourney.java:24)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connection to http://127.0.0.1:7055 refused
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:158)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:149)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:121)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:561)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:415)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:820)
+	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:319)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:297)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:136)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:325)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:446)
+	... 35 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:75)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:157)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:391)
+	at java.net.Socket.connect(Socket.java:579)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:123)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:148)
+	... 45 more
+</failure>
+    <system-out>Step 1:-- CSR journey started.......... User ID is:---csr_websel_08_17_13_09_52@zaqwsx.com
+</system-out>
+  </testcase>
+  <testcase time="0.999" classname="ACS_CRMN.CSRjourney" name="B_custBankDetails">
+    <failure message="Error communicating with the remote browser. It may have died.
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_06&apos;
+Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.remote.UnreachableBrowserException">org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_06&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:467)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:242)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:327)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:343)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:234)
+	at ACS_CRMN.CSRBaseClass.BankDetails(CSRBaseClass.java:111)
+	at ACS_CRMN.CSRjourney.B_custBankDetails(CSRjourney.java:33)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connection to http://127.0.0.1:7055 refused
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:158)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:149)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:121)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:561)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:415)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:820)
+	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:319)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:297)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:136)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:325)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:446)
+	... 35 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:75)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:157)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:391)
+	at java.net.Socket.connect(Socket.java:579)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:123)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:148)
+	... 45 more
+</failure>
+  </testcase>
+  <testcase time="5.906" classname="ACS_CRMN.CSRjourney" name="C_CheckProfile">
+    <failure message="A JSONObject text must begin with &apos;{&apos; at character 0" type="org.json.JSONException">org.json.JSONException: A JSONObject text must begin with &apos;{&apos; at character 0
+	at org.json.JSONTokener.syntaxError(JSONTokener.java:496)
+	at org.json.JSONObject.&lt;init&gt;(JSONObject.java:180)
+	at org.json.JSONObject.&lt;init&gt;(JSONObject.java:403)
+	at ACS_CRMN.AcsCalls.custProfile(AcsCalls.java:23)
+	at ACS_CRMN.CSRjourney.C_CheckProfile(CSRjourney.java:46)
+</failure>
+    <system-out>Step 2:-- Call out ACS to compare values entered in web journey.....
+</system-out>
+  </testcase>
+  <testcase time="0.193" classname="ACS_CRMN.CSRjourney" name="D_CheckEntitlement">
+    <failure message="A JSONObject text must begin with &apos;{&apos; at character 0" type="org.json.JSONException">org.json.JSONException: A JSONObject text must begin with &apos;{&apos; at character 0
+	at org.json.JSONTokener.syntaxError(JSONTokener.java:496)
+	at org.json.JSONObject.&lt;init&gt;(JSONObject.java:180)
+	at org.json.JSONObject.&lt;init&gt;(JSONObject.java:403)
+	at ACS_CRMN.AcsCalls.custEntitlements(AcsCalls.java:55)
+	at ACS_CRMN.CSRjourney.D_CheckEntitlement(CSRjourney.java:59)
+</failure>
+    <system-out>Step 4:-- Call out ACS to check entitlements.....
+</system-out>
+  </testcase>
+  <testcase time="10.456" classname="ACS_CRMN.TLSjourney" name="A_TLSwebJourney">
+    <failure message="Error communicating with the remote browser. It may have died.
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_06&apos;
+Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.remote.UnreachableBrowserException">org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_06&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:467)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:242)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:271)
+	at org.openqa.selenium.By$ById.findElement(By.java:215)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:234)
+	at ACS_CRMN.TLSbaseClass.TLSwebjourney1(TLSbaseClass.java:52)
+	at ACS_CRMN.TLSjourney.A_TLSwebJourney(TLSjourney.java:23)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connection to http://127.0.0.1:7055 refused
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:158)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:149)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:121)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:561)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:415)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:820)
+	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:337)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:297)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:136)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:325)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:446)
+	... 35 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:75)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:157)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:391)
+	at java.net.Socket.connect(Socket.java:579)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:123)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:148)
+	... 45 more
+</failure>
+    <system-out>Step 1:-- Web journey - PART-1 started...stops beofre filling payment details....... User ID is:---websel_08_17_13_09_52@zaqwsx.com
+</system-out>
+  </testcase>
+  <testcase time="5.18" classname="ACS_CRMN.TLSjourney" name="B_TLScheckProfile">
+    <failure message="A JSONObject text must begin with &apos;{&apos; at character 0" type="org.json.JSONException">org.json.JSONException: A JSONObject text must begin with &apos;{&apos; at character 0
+	at org.json.JSONTokener.syntaxError(JSONTokener.java:496)
+	at org.json.JSONObject.&lt;init&gt;(JSONObject.java:180)
+	at org.json.JSONObject.&lt;init&gt;(JSONObject.java:403)
+	at ACS_CRMN.AcsCalls.custProfile(AcsCalls.java:23)
+	at ACS_CRMN.TLSjourney.B_TLScheckProfile(TLSjourney.java:40)
+</failure>
+    <system-out>Step 2:-- Call out ACS to compare values entered in web journey.....
+</system-out>
+  </testcase>
+  <testcase time="0.202" classname="ACS_CRMN.TLSjourney" name="D_CheckEntitlement">
+    <failure message="A JSONObject text must begin with &apos;{&apos; at character 0" type="org.json.JSONException">org.json.JSONException: A JSONObject text must begin with &apos;{&apos; at character 0
+	at org.json.JSONTokener.syntaxError(JSONTokener.java:496)
+	at org.json.JSONObject.&lt;init&gt;(JSONObject.java:180)
+	at org.json.JSONObject.&lt;init&gt;(JSONObject.java:403)
+	at ACS_CRMN.AcsCalls.custEntitlements(AcsCalls.java:55)
+	at ACS_CRMN.TLSjourney.D_CheckEntitlement(TLSjourney.java:57)
+</failure>
+    <system-out>Step 3:-- Call out ACS to check entitlements.....
+</system-out>
+  </testcase>
+  <testcase time="4.096" classname="ACS_CRMN.WebJourney" name="A_WebJourney1">
+    <failure message="Error communicating with the remote browser. It may have died.
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_06&apos;
+Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.remote.UnreachableBrowserException">org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_06&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:467)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:216)
+	at ACS_CRMN.WebJourneyBaseClass.webjourney1(WebJourneyBaseClass.java:50)
+	at ACS_CRMN.WebJourney.A_WebJourney1(WebJourney.java:23)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connection to http://127.0.0.1:7055 refused
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:158)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:149)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:121)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:561)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:415)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:820)
+	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:337)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:297)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:136)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:325)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:446)
+	... 32 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:75)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:157)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:391)
+	at java.net.Socket.connect(Socket.java:579)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:123)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:148)
+	... 42 more
+</failure>
+    <system-out>Step 1:-- Web journey - PART-1 started...stops beofre filling payment details....... User ID is:---websel_08_17_13_09_52@zaqwsx.com
+</system-out>
+  </testcase>
+  <testcase time="5.172" classname="ACS_CRMN.WebJourney" name="B_CheckProfile">
+    <failure message="A JSONObject text must begin with &apos;{&apos; at character 0" type="org.json.JSONException">org.json.JSONException: A JSONObject text must begin with &apos;{&apos; at character 0
+	at org.json.JSONTokener.syntaxError(JSONTokener.java:496)
+	at org.json.JSONObject.&lt;init&gt;(JSONObject.java:180)
+	at org.json.JSONObject.&lt;init&gt;(JSONObject.java:403)
+	at ACS_CRMN.AcsCalls.custProfile(AcsCalls.java:23)
+	at ACS_CRMN.WebJourney.B_CheckProfile(WebJourney.java:38)
+</failure>
+    <system-out>Step 2:-- Call out ACS to compare values entered in web journey.....
+</system-out>
+  </testcase>
+  <testcase time="1.006" classname="ACS_CRMN.WebJourney" name="C_WebJourney2">
+    <failure message="Error communicating with the remote browser. It may have died.
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_06&apos;
+Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.remote.UnreachableBrowserException">org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_06&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:467)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:242)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:271)
+	at org.openqa.selenium.By$ById.findElement(By.java:215)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:234)
+	at ACS_CRMN.WebJourneyBaseClass.webjourney2(WebJourneyBaseClass.java:92)
+	at ACS_CRMN.WebJourney.C_WebJourney2(WebJourney.java:50)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connection to http://127.0.0.1:7055 refused
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:158)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:149)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:121)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:561)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:415)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:820)
+	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:319)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:297)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:136)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:325)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:446)
+	... 35 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:75)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:157)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:391)
+	at java.net.Socket.connect(Socket.java:579)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:123)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:148)
+	... 45 more
+</failure>
+    <system-out>Step 3 :-- Web journey PART-2 fill payment details and save.......
+</system-out>
+  </testcase>
+  <testcase time="0.16" classname="ACS_CRMN.WebJourney" name="D_CheckEntitlement">
+    <failure message="A JSONObject text must begin with &apos;{&apos; at character 0" type="org.json.JSONException">org.json.JSONException: A JSONObject text must begin with &apos;{&apos; at character 0
+	at org.json.JSONTokener.syntaxError(JSONTokener.java:496)
+	at org.json.JSONObject.&lt;init&gt;(JSONObject.java:180)
+	at org.json.JSONObject.&lt;init&gt;(JSONObject.java:403)
+	at ACS_CRMN.AcsCalls.custEntitlements(AcsCalls.java:55)
+	at ACS_CRMN.WebJourney.D_CheckEntitlement(WebJourney.java:60)
+</failure>
+    <system-out>Step 4:-- Call out ACS to check entitlements.....
+</system-out>
+  </testcase>
+  <testcase time="6.001" classname="ACS_CRMN.WebJourney" name="E_WebJourneyEdit">
+    <failure message="Error communicating with the remote browser. It may have died.
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_06&apos;
+Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.remote.UnreachableBrowserException">org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_06&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:467)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:242)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:327)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:343)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:234)
+	at ACS_CRMN.WebJourneyBaseClass.webjourneyEdit(WebJourneyBaseClass.java:109)
+	at ACS_CRMN.WebJourney.E_WebJourneyEdit(WebJourney.java:71)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connection to http://127.0.0.1:7055 refused
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:158)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:149)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:121)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:561)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:415)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:820)
+	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:319)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:297)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:136)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:325)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:446)
+	... 35 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:75)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:157)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:391)
+	at java.net.Socket.connect(Socket.java:579)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:123)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:148)
+	... 45 more
+</failure>
+    <system-out>Step 5:--- Editing user detals in middle of journey.........
+</system-out>
+  </testcase>
+  <testcase time="5.177" classname="ACS_CRMN.WebJourney" name="F_checkProfile">
+    <failure message="A JSONObject text must begin with &apos;{&apos; at character 0" type="org.json.JSONException">org.json.JSONException: A JSONObject text must begin with &apos;{&apos; at character 0
+	at org.json.JSONTokener.syntaxError(JSONTokener.java:496)
+	at org.json.JSONObject.&lt;init&gt;(JSONObject.java:180)
+	at org.json.JSONObject.&lt;init&gt;(JSONObject.java:403)
+	at ACS_CRMN.AcsCalls.custProfile(AcsCalls.java:23)
+	at ACS_CRMN.WebJourney.F_checkProfile(WebJourney.java:80)
+</failure>
+    <system-out>Step 6:-- Call out ACS to compare updated values in web journey.....
+</system-out>
+  </testcase>
+  <testcase time="0.132" classname="ACS_CRMN.WebJourney" name="G_CheckEntitlement">
+    <failure message="A JSONObject text must begin with &apos;{&apos; at character 0" type="org.json.JSONException">org.json.JSONException: A JSONObject text must begin with &apos;{&apos; at character 0
+	at org.json.JSONTokener.syntaxError(JSONTokener.java:496)
+	at org.json.JSONObject.&lt;init&gt;(JSONObject.java:180)
+	at org.json.JSONObject.&lt;init&gt;(JSONObject.java:403)
+	at ACS_CRMN.AcsCalls.custEntitlements(AcsCalls.java:55)
+	at ACS_CRMN.WebJourney.G_CheckEntitlement(WebJourney.java:90)
+</failure>
+    <system-out>Step 7:-- Call out ACS to check entitlements..Should exist now...
+</system-out>
+  </testcase>
+</testsuite>

@@ -1,50 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="13" passed="12">
+<testng-results skipped="0" failed="3" total="14" passed="11">
   <reporter-output>
   </reporter-output>
-  <suite name="CRMN" duration-ms="239110" started-at="2012-09-03T17:25:57Z" finished-at="2012-09-03T17:29:57Z">
+  <suite name="CRMN" duration-ms="386930" started-at="2012-09-04T11:05:07Z" finished-at="2012-09-04T11:11:34Z">
     <groups>
       <group name="a">
-        <method signature="CSRjourney.A_custCreation()[pri:0, instance:ACS_CRMN.CSRjourney@1bca5f1]" name="A_custCreation" class="ACS_CRMN.CSRjourney"/>
-        <method signature="CSRjourney.B_custBankDetails()[pri:0, instance:ACS_CRMN.CSRjourney@1bca5f1]" name="B_custBankDetails" class="ACS_CRMN.CSRjourney"/>
-        <method signature="CSRjourney.C_CheckProfile()[pri:0, instance:ACS_CRMN.CSRjourney@1bca5f1]" name="C_CheckProfile" class="ACS_CRMN.CSRjourney"/>
-        <method signature="CSRjourney.D_CheckEntitlement()[pri:0, instance:ACS_CRMN.CSRjourney@1bca5f1]" name="D_CheckEntitlement" class="ACS_CRMN.CSRjourney"/>
-        <method signature="TLSjourney.A_TLSwebJourney()[pri:0, instance:ACS_CRMN.TLSjourney@1dfafd1]" name="A_TLSwebJourney" class="ACS_CRMN.TLSjourney"/>
-        <method signature="TLSjourney.B_TLScheckProfile()[pri:0, instance:ACS_CRMN.TLSjourney@1dfafd1]" name="B_TLScheckProfile" class="ACS_CRMN.TLSjourney"/>
-        <method signature="TLSjourney.D_CheckEntitlement()[pri:0, instance:ACS_CRMN.TLSjourney@1dfafd1]" name="D_CheckEntitlement" class="ACS_CRMN.TLSjourney"/>
-        <method signature="WebJourney.A_WebJourney1()[pri:0, instance:ACS_CRMN.WebJourney@6f7ce9]" name="A_WebJourney1" class="ACS_CRMN.WebJourney"/>
-        <method signature="WebJourney.B_CheckProfile()[pri:0, instance:ACS_CRMN.WebJourney@6f7ce9]" name="B_CheckProfile" class="ACS_CRMN.WebJourney"/>
-        <method signature="WebJourney.C_WebJourney2()[pri:0, instance:ACS_CRMN.WebJourney@6f7ce9]" name="C_WebJourney2" class="ACS_CRMN.WebJourney"/>
-        <method signature="WebJourney.D_CheckEntitlement()[pri:0, instance:ACS_CRMN.WebJourney@6f7ce9]" name="D_CheckEntitlement" class="ACS_CRMN.WebJourney"/>
+        <method signature="CSRjourney.A_custCreation()[pri:0, instance:ACS_CRMN.CSRjourney@169ca65]" name="A_custCreation" class="ACS_CRMN.CSRjourney"/>
+        <method signature="CSRjourney.B_custBankDetails()[pri:0, instance:ACS_CRMN.CSRjourney@169ca65]" name="B_custBankDetails" class="ACS_CRMN.CSRjourney"/>
+        <method signature="CSRjourney.C_CheckProfile()[pri:0, instance:ACS_CRMN.CSRjourney@169ca65]" name="C_CheckProfile" class="ACS_CRMN.CSRjourney"/>
+        <method signature="CSRjourney.D_CheckEntitlement()[pri:0, instance:ACS_CRMN.CSRjourney@169ca65]" name="D_CheckEntitlement" class="ACS_CRMN.CSRjourney"/>
+        <method signature="TLSjourney.A_TLSwebJourney()[pri:0, instance:ACS_CRMN.TLSjourney@ece65]" name="A_TLSwebJourney" class="ACS_CRMN.TLSjourney"/>
+        <method signature="TLSjourney.B_TLScheckProfile()[pri:0, instance:ACS_CRMN.TLSjourney@ece65]" name="B_TLScheckProfile" class="ACS_CRMN.TLSjourney"/>
+        <method signature="TLSjourney.D_CheckEntitlement()[pri:0, instance:ACS_CRMN.TLSjourney@ece65]" name="D_CheckEntitlement" class="ACS_CRMN.TLSjourney"/>
+        <method signature="WebJourney.A_WebJourney1()[pri:0, instance:ACS_CRMN.WebJourney@15a8767]" name="A_WebJourney1" class="ACS_CRMN.WebJourney"/>
+        <method signature="WebJourney.B_CheckProfile()[pri:0, instance:ACS_CRMN.WebJourney@15a8767]" name="B_CheckProfile" class="ACS_CRMN.WebJourney"/>
+        <method signature="WebJourney.C_WebJourney2()[pri:0, instance:ACS_CRMN.WebJourney@15a8767]" name="C_WebJourney2" class="ACS_CRMN.WebJourney"/>
+        <method signature="WebJourney.D_CheckEntitlement()[pri:0, instance:ACS_CRMN.WebJourney@15a8767]" name="D_CheckEntitlement" class="ACS_CRMN.WebJourney"/>
       </group> <!-- a -->
     </groups>
-    <test name="Webjourney" duration-ms="239110" started-at="2012-09-03T17:25:57Z" finished-at="2012-09-03T17:29:57Z">
+    <test name="Webjourney" duration-ms="386930" started-at="2012-09-04T11:05:07Z" finished-at="2012-09-04T11:11:34Z">
       <class name="ACS_CRMN.WebJourney">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:ACS_CRMN.WebJourney@6f7ce9]" name="setUp" is-config="true" duration-ms="16473" started-at="2012-09-03T17:25:57Z" finished-at="2012-09-03T17:26:14Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:ACS_CRMN.WebJourney@15a8767]" name="setUp" is-config="true" duration-ms="14380" started-at="2012-09-04T11:05:07Z" finished-at="2012-09-04T11:05:22Z">
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="A_WebJourney1()[pri:0, instance:ACS_CRMN.WebJourney@6f7ce9]" name="A_WebJourney1" duration-ms="37407" started-at="2012-09-03T17:26:14Z" finished-at="2012-09-03T17:26:51Z">
+        <test-method status="PASS" signature="A_WebJourney1()[pri:0, instance:ACS_CRMN.WebJourney@15a8767]" name="A_WebJourney1" duration-ms="149808" started-at="2012-09-04T11:05:22Z" finished-at="2012-09-04T11:07:51Z">
         </test-method> <!-- A_WebJourney1 -->
-        <test-method status="PASS" signature="B_CheckProfile()[pri:0, instance:ACS_CRMN.WebJourney@6f7ce9]" name="B_CheckProfile" duration-ms="10935" started-at="2012-09-03T17:26:51Z" finished-at="2012-09-03T17:27:02Z">
+        <test-method status="PASS" signature="B_CheckProfile()[pri:0, instance:ACS_CRMN.WebJourney@15a8767]" name="B_CheckProfile" duration-ms="11107" started-at="2012-09-04T11:07:51Z" finished-at="2012-09-04T11:08:03Z">
         </test-method> <!-- B_CheckProfile -->
-        <test-method status="PASS" signature="C_WebJourney2()[pri:0, instance:ACS_CRMN.WebJourney@6f7ce9]" name="C_WebJourney2" duration-ms="10532" started-at="2012-09-03T17:27:02Z" finished-at="2012-09-03T17:27:13Z">
+        <test-method status="PASS" signature="C_WebJourney2()[pri:0, instance:ACS_CRMN.WebJourney@15a8767]" name="C_WebJourney2" duration-ms="10585" started-at="2012-09-04T11:08:03Z" finished-at="2012-09-04T11:08:13Z">
         </test-method> <!-- C_WebJourney2 -->
-        <test-method status="PASS" signature="D_CheckEntitlement()[pri:0, instance:ACS_CRMN.WebJourney@6f7ce9]" name="D_CheckEntitlement" duration-ms="5335" started-at="2012-09-03T17:27:13Z" finished-at="2012-09-03T17:27:18Z">
+        <test-method status="PASS" signature="D_CheckEntitlement()[pri:0, instance:ACS_CRMN.WebJourney@15a8767]" name="D_CheckEntitlement" duration-ms="5330" started-at="2012-09-04T11:08:13Z" finished-at="2012-09-04T11:08:18Z">
         </test-method> <!-- D_CheckEntitlement -->
-        <test-method status="PASS" signature="E_WebJourneyEdit()[pri:0, instance:ACS_CRMN.WebJourney@6f7ce9]" name="E_WebJourneyEdit" duration-ms="37387" started-at="2012-09-03T17:27:18Z" finished-at="2012-09-03T17:27:55Z">
+        <test-method status="PASS" signature="E_WebJourneyEdit()[pri:0, instance:ACS_CRMN.WebJourney@15a8767]" name="E_WebJourneyEdit" duration-ms="29724" started-at="2012-09-04T11:08:18Z" finished-at="2012-09-04T11:08:48Z">
         </test-method> <!-- E_WebJourneyEdit -->
-        <test-method status="PASS" signature="G_CheckEntitlement()[pri:0, instance:ACS_CRMN.WebJourney@6f7ce9]" name="G_CheckEntitlement" duration-ms="173" started-at="2012-09-03T17:27:55Z" finished-at="2012-09-03T17:27:56Z">
+        <test-method status="FAIL" signature="F_Check_ACS_EditJourney_Profile()[pri:0, instance:ACS_CRMN.WebJourney@15a8767]" name="F_Check_ACS_EditJourney_Profile" duration-ms="5170" started-at="2012-09-04T11:08:48Z" finished-at="2012-09-04T11:08:53Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Profile after updation........ expected:<true> but was:<false>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Profile after updation........ expected:<true> but was:<false>
+	at org.testng.Assert.fail(Assert.java:89)
+	at org.testng.Assert.failNotEquals(Assert.java:489)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:281)
+	at ACS_CRMN.WebJourney.F_Check_ACS_EditJourney_Profile(WebJourney.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:702)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:894)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1219)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
+	at org.testng.TestNG.run(TestNG.java:1030)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+        </test-method> <!-- F_Check_ACS_EditJourney_Profile -->
+        <test-method status="PASS" signature="G_CheckEntitlement()[pri:0, instance:ACS_CRMN.WebJourney@15a8767]" name="G_CheckEntitlement" duration-ms="163" started-at="2012-09-04T11:08:53Z" finished-at="2012-09-04T11:08:54Z">
         </test-method> <!-- G_CheckEntitlement -->
       </class> <!-- ACS_CRMN.WebJourney -->
       <class name="ACS_CRMN.CSRjourney">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:ACS_CRMN.CSRjourney@1bca5f1]" name="setUp" is-config="true" duration-ms="16309" started-at="2012-09-03T17:27:56Z" finished-at="2012-09-03T17:28:12Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:ACS_CRMN.CSRjourney@169ca65]" name="setUp" is-config="true" duration-ms="14840" started-at="2012-09-04T11:08:54Z" finished-at="2012-09-04T11:09:08Z">
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="A_custCreation()[pri:0, instance:ACS_CRMN.CSRjourney@1bca5f1]" name="A_custCreation" duration-ms="33785" started-at="2012-09-03T17:28:12Z" finished-at="2012-09-03T17:28:46Z">
+        <test-method status="PASS" signature="A_custCreation()[pri:0, instance:ACS_CRMN.CSRjourney@169ca65]" name="A_custCreation" duration-ms="34070" started-at="2012-09-04T11:09:08Z" finished-at="2012-09-04T11:09:42Z">
         </test-method> <!-- A_custCreation -->
-        <test-method status="PASS" signature="C_CheckProfile()[pri:0, instance:ACS_CRMN.CSRjourney@1bca5f1]" name="C_CheckProfile" duration-ms="5199" started-at="2012-09-03T17:28:46Z" finished-at="2012-09-03T17:28:51Z">
+        <test-method status="PASS" signature="C_CheckProfile()[pri:0, instance:ACS_CRMN.CSRjourney@169ca65]" name="C_CheckProfile" duration-ms="5293" started-at="2012-09-04T11:09:42Z" finished-at="2012-09-04T11:09:48Z">
         </test-method> <!-- C_CheckProfile -->
-        <test-method status="PASS" signature="B_custBankDetails()[pri:0, instance:ACS_CRMN.CSRjourney@1bca5f1]" name="B_custBankDetails" duration-ms="15297" started-at="2012-09-03T17:28:51Z" finished-at="2012-09-03T17:29:06Z">
+        <test-method status="PASS" signature="B_custBankDetails()[pri:0, instance:ACS_CRMN.CSRjourney@169ca65]" name="B_custBankDetails" duration-ms="16027" started-at="2012-09-04T11:09:48Z" finished-at="2012-09-04T11:10:04Z">
         </test-method> <!-- B_custBankDetails -->
-        <test-method status="FAIL" signature="D_CheckEntitlement()[pri:0, instance:ACS_CRMN.CSRjourney@1bca5f1]" name="D_CheckEntitlement" duration-ms="203" started-at="2012-09-03T17:29:06Z" finished-at="2012-09-03T17:29:06Z">
+        <test-method status="FAIL" signature="D_CheckEntitlement()[pri:0, instance:ACS_CRMN.CSRjourney@169ca65]" name="D_CheckEntitlement" duration-ms="233" started-at="2012-09-04T11:10:04Z" finished-at="2012-09-04T11:10:04Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Entitlements  before updation...should be zero....... expected:<true> but was:<false>]]>
@@ -86,13 +126,77 @@
         </test-method> <!-- D_CheckEntitlement -->
       </class> <!-- ACS_CRMN.CSRjourney -->
       <class name="ACS_CRMN.TLSjourney">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:ACS_CRMN.TLSjourney@1dfafd1]" name="setUp" is-config="true" duration-ms="12110" started-at="2012-09-03T17:29:06Z" finished-at="2012-09-03T17:29:19Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:ACS_CRMN.TLSjourney@ece65]" name="setUp" is-config="true" duration-ms="17842" started-at="2012-09-04T11:10:04Z" finished-at="2012-09-04T11:10:22Z">
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="A_TLSwebJourney()[pri:0, instance:ACS_CRMN.TLSjourney@1dfafd1]" name="A_TLSwebJourney" duration-ms="22441" started-at="2012-09-03T17:29:19Z" finished-at="2012-09-03T17:29:41Z">
+        <test-method status="FAIL" signature="A_TLSwebJourney()[pri:0, instance:ACS_CRMN.TLSjourney@ece65]" name="A_TLSwebJourney" duration-ms="56864" started-at="2012-09-04T11:10:22Z" finished-at="2012-09-04T11:11:19Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: {"method":"link text","selector":"Log out"}
+Command duration or timeout: 30.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.6.0_20'
+Driver info: driver.version: RemoteWebDriver
+Session ID: e68b8577-16e7-4ac9-b85e-71a25dcf8004]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"link text","selector":"Log out"}
+Command duration or timeout: 30.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.6.0_20'
+Driver info: driver.version: RemoteWebDriver
+Session ID: e68b8577-16e7-4ac9-b85e-71a25dcf8004
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:472)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:242)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:279)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:240)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:234)
+	at ACS_CRMN.TLSbaseClass.TLSwebjourney1(TLSbaseClass.java:90)
+	at ACS_CRMN.TLSjourney.A_TLSwebJourney(TLSjourney.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:702)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:894)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1219)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
+	at org.testng.TestNG.run(TestNG.java:1030)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {"method":"link text","selector":"Log out"}
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.6.0_20'
+Driver info: driver.version: unknown
+	at <anonymous class>.<anonymous method>(file:///C:/Users/JVendi/AppData/Local/Temp/anonymous2530234918160500693webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:6556)
+	at <anonymous class>.<anonymous method>(file:///C:/Users/JVendi/AppData/Local/Temp/anonymous2530234918160500693webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:471)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
         </test-method> <!-- A_TLSwebJourney -->
-        <test-method status="PASS" signature="B_TLScheckProfile()[pri:0, instance:ACS_CRMN.TLSjourney@1dfafd1]" name="B_TLScheckProfile" duration-ms="10157" started-at="2012-09-03T17:29:41Z" finished-at="2012-09-03T17:29:51Z">
+        <test-method status="PASS" signature="B_TLScheckProfile()[pri:0, instance:ACS_CRMN.TLSjourney@ece65]" name="B_TLScheckProfile" duration-ms="10273" started-at="2012-09-04T11:11:19Z" finished-at="2012-09-04T11:11:29Z">
         </test-method> <!-- B_TLScheckProfile -->
-        <test-method status="PASS" signature="D_CheckEntitlement()[pri:0, instance:ACS_CRMN.TLSjourney@1dfafd1]" name="D_CheckEntitlement" duration-ms="5346" started-at="2012-09-03T17:29:51Z" finished-at="2012-09-03T17:29:57Z">
+        <test-method status="PASS" signature="D_CheckEntitlement()[pri:0, instance:ACS_CRMN.TLSjourney@ece65]" name="D_CheckEntitlement" duration-ms="5191" started-at="2012-09-04T11:11:29Z" finished-at="2012-09-04T11:11:34Z">
         </test-method> <!-- D_CheckEntitlement -->
       </class> <!-- ACS_CRMN.TLSjourney -->
     </test> <!-- Webjourney -->

@@ -1,0 +1,500 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.param,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.param td,table.param th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.param th {vertical-align:bottom}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.param td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.param tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Webjourney</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">14</td><td class="numi">75.7 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<a id="summary"></a>
+<table cellspacing=0 cellpadding=0 class="passed">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Time<br/>(Msecs)</th></tr>
+<tr><th colspan="4">Webjourney &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="4">ACS_CRMN.CSRjourney<td><a href="#m1"><b>A_custCreation</b> (a) </a></td><td class="numi">1</td><td class="numi">11050</td></tr><tr class="failedodd"><td><a href="#m2"><b>B_custBankDetails</b> (a) </a></td><td class="numi">1</td><td class="numi">999</td></tr><tr class="failedodd"><td><a href="#m3"><b>C_CheckProfile</b> (a) </a></td><td class="numi">1</td><td class="numi">5906</td></tr><tr class="failedodd"><td><a href="#m4"><b>D_CheckEntitlement</b> (a) </a></td><td class="numi">1</td><td class="numi">193</td></tr>
+<tr class="failedeven"><td rowspan="3">ACS_CRMN.TLSjourney<td><a href="#m5"><b>A_TLSwebJourney</b> (a) </a></td><td class="numi">1</td><td class="numi">10456</td></tr><tr class="failedeven"><td><a href="#m6"><b>B_TLScheckProfile</b> (a) </a></td><td class="numi">1</td><td class="numi">5179</td></tr><tr class="failedeven"><td><a href="#m7"><b>D_CheckEntitlement</b> (a) </a></td><td class="numi">1</td><td class="numi">202</td></tr>
+<tr class="failedodd"><td rowspan="7">ACS_CRMN.WebJourney<br>"Webjourney"<td><a href="#m8"><b>A_WebJourney1</b> (a) </a></td><td class="numi">1</td><td class="numi">4096</td></tr><tr class="failedodd"><td><a href="#m9"><b>B_CheckProfile</b> (a) </a></td><td class="numi">1</td><td class="numi">5172</td></tr><tr class="failedodd"><td><a href="#m10"><b>C_WebJourney2</b> (a) </a></td><td class="numi">1</td><td class="numi">1006</td></tr><tr class="failedodd"><td><a href="#m11"><b>D_CheckEntitlement</b> (a) </a></td><td class="numi">1</td><td class="numi">160</td></tr><tr class="failedodd"><td><a href="#m12"><b>E_WebJourneyEdit</b>  </a></td><td class="numi">1</td><td class="numi">6001</td></tr><tr class="failedodd"><td><a href="#m13"><b>F_checkProfile</b>  </a></td><td class="numi">1</td><td class="numi">5177</td></tr><tr class="failedodd"><td><a href="#m14"><b>G_CheckEntitlement</b>  </a></td><td class="numi">1</td><td class="numi">132</td></tr>
+</table>
+<h1>Webjourney</h1>
+<a id="m1"></a><h2>ACS_CRMN.CSRjourney:A_custCreation</h2>
+<div style="padding-left:3em">
+<p>Error communicating with the remote browser. It may have died.
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_06'
+Driver info: driver.version: RemoteWebDriver</p>
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:467)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:242)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:271)
+<br/>at org.openqa.selenium.By$ById.findElement(By.java:215)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:234)
+<br/>at ACS_CRMN.CSRBaseClass.custCreation(CSRBaseClass.java:53)
+<br/>at ACS_CRMN.CSRjourney.A_custCreation(CSRjourney.java:24)
+<br/>30 lines not shown
+<p>Caused by Connection to http://127.0.0.1:7055 refused</p>
+org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:158)
+<br/>at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:149)
+<br/>at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:121)
+<br/>at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:561)
+<br/>at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:415)
+<br/>at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:820)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:319)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:297)
+<br/>at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:136)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:325)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:446)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:242)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:271)
+<br/>at org.openqa.selenium.By$ById.findElement(By.java:215)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:234)
+<br/>at ACS_CRMN.CSRBaseClass.custCreation(CSRBaseClass.java:53)
+<br/>at ACS_CRMN.CSRjourney.A_custCreation(CSRjourney.java:24)
+<br/>30 lines not shown
+<p>Caused by Connection refused: connect</p>
+java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+<br/>at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:75)
+<br/>at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+<br/>at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+<br/>at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+<br/>at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:157)
+<br/>at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:391)
+<br/>at java.net.Socket.connect(Socket.java:579)
+<br/>at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:123)
+<br/>at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:148)
+<br/>at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:149)
+<br/>at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:121)
+<br/>at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:561)
+<br/>at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:415)
+<br/>at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:820)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:319)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:297)
+<br/>at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:136)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:325)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:446)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:242)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:271)
+<br/>at org.openqa.selenium.By$ById.findElement(By.java:215)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:234)
+<br/>at ACS_CRMN.CSRBaseClass.custCreation(CSRBaseClass.java:53)
+<br/>at ACS_CRMN.CSRjourney.A_custCreation(CSRjourney.java:24)
+<br/>30 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m2"></a><h2>ACS_CRMN.CSRjourney:B_custBankDetails</h2>
+<div style="padding-left:3em">
+<p>Error communicating with the remote browser. It may have died.
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_06'
+Driver info: driver.version: RemoteWebDriver</p>
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:467)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:242)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:327)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:343)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:234)
+<br/>at ACS_CRMN.CSRBaseClass.BankDetails(CSRBaseClass.java:111)
+<br/>at ACS_CRMN.CSRjourney.B_custBankDetails(CSRjourney.java:33)
+<br/>30 lines not shown
+<p>Caused by Connection to http://127.0.0.1:7055 refused</p>
+org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:158)
+<br/>at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:149)
+<br/>at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:121)
+<br/>at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:561)
+<br/>at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:415)
+<br/>at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:820)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:319)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:297)
+<br/>at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:136)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:325)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:446)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:242)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:327)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:343)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:234)
+<br/>at ACS_CRMN.CSRBaseClass.BankDetails(CSRBaseClass.java:111)
+<br/>at ACS_CRMN.CSRjourney.B_custBankDetails(CSRjourney.java:33)
+<br/>30 lines not shown
+<p>Caused by Connection refused: connect</p>
+java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+<br/>at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:75)
+<br/>at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+<br/>at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+<br/>at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+<br/>at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:157)
+<br/>at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:391)
+<br/>at java.net.Socket.connect(Socket.java:579)
+<br/>at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:123)
+<br/>at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:148)
+<br/>at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:149)
+<br/>at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:121)
+<br/>at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:561)
+<br/>at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:415)
+<br/>at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:820)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:319)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:297)
+<br/>at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:136)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:325)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:446)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:242)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:327)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:343)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:234)
+<br/>at ACS_CRMN.CSRBaseClass.BankDetails(CSRBaseClass.java:111)
+<br/>at ACS_CRMN.CSRjourney.B_custBankDetails(CSRjourney.java:33)
+<br/>30 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m3"></a><h2>ACS_CRMN.CSRjourney:C_CheckProfile</h2>
+<div style="padding-left:3em">
+<p>A JSONObject text must begin with '{' at character 0</p>
+org.json.JSONTokener.syntaxError(JSONTokener.java:496)
+<br/>at org.json.JSONObject.&lt;init&gt;(JSONObject.java:180)
+<br/>at org.json.JSONObject.&lt;init&gt;(JSONObject.java:403)
+<br/>at ACS_CRMN.AcsCalls.custProfile(AcsCalls.java:23)
+<br/>at ACS_CRMN.CSRjourney.C_CheckProfile(CSRjourney.java:46)
+<br/>30 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m4"></a><h2>ACS_CRMN.CSRjourney:D_CheckEntitlement</h2>
+<div style="padding-left:3em">
+<p>A JSONObject text must begin with '{' at character 0</p>
+org.json.JSONTokener.syntaxError(JSONTokener.java:496)
+<br/>at org.json.JSONObject.&lt;init&gt;(JSONObject.java:180)
+<br/>at org.json.JSONObject.&lt;init&gt;(JSONObject.java:403)
+<br/>at ACS_CRMN.AcsCalls.custEntitlements(AcsCalls.java:55)
+<br/>at ACS_CRMN.CSRjourney.D_CheckEntitlement(CSRjourney.java:59)
+<br/>30 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m5"></a><h2>ACS_CRMN.TLSjourney:A_TLSwebJourney</h2>
+<div style="padding-left:3em">
+<p>Error communicating with the remote browser. It may have died.
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_06'
+Driver info: driver.version: RemoteWebDriver</p>
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:467)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:242)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:271)
+<br/>at org.openqa.selenium.By$ById.findElement(By.java:215)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:234)
+<br/>at ACS_CRMN.TLSbaseClass.TLSwebjourney1(TLSbaseClass.java:52)
+<br/>at ACS_CRMN.TLSjourney.A_TLSwebJourney(TLSjourney.java:23)
+<br/>30 lines not shown
+<p>Caused by Connection to http://127.0.0.1:7055 refused</p>
+org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:158)
+<br/>at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:149)
+<br/>at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:121)
+<br/>at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:561)
+<br/>at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:415)
+<br/>at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:820)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:337)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:297)
+<br/>at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:136)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:325)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:446)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:242)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:271)
+<br/>at org.openqa.selenium.By$ById.findElement(By.java:215)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:234)
+<br/>at ACS_CRMN.TLSbaseClass.TLSwebjourney1(TLSbaseClass.java:52)
+<br/>at ACS_CRMN.TLSjourney.A_TLSwebJourney(TLSjourney.java:23)
+<br/>30 lines not shown
+<p>Caused by Connection refused: connect</p>
+java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+<br/>at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:75)
+<br/>at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+<br/>at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+<br/>at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+<br/>at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:157)
+<br/>at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:391)
+<br/>at java.net.Socket.connect(Socket.java:579)
+<br/>at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:123)
+<br/>at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:148)
+<br/>at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:149)
+<br/>at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:121)
+<br/>at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:561)
+<br/>at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:415)
+<br/>at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:820)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:337)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:297)
+<br/>at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:136)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:325)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:446)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:242)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:271)
+<br/>at org.openqa.selenium.By$ById.findElement(By.java:215)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:234)
+<br/>at ACS_CRMN.TLSbaseClass.TLSwebjourney1(TLSbaseClass.java:52)
+<br/>at ACS_CRMN.TLSjourney.A_TLSwebJourney(TLSjourney.java:23)
+<br/>30 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m6"></a><h2>ACS_CRMN.TLSjourney:B_TLScheckProfile</h2>
+<div style="padding-left:3em">
+<p>A JSONObject text must begin with '{' at character 0</p>
+org.json.JSONTokener.syntaxError(JSONTokener.java:496)
+<br/>at org.json.JSONObject.&lt;init&gt;(JSONObject.java:180)
+<br/>at org.json.JSONObject.&lt;init&gt;(JSONObject.java:403)
+<br/>at ACS_CRMN.AcsCalls.custProfile(AcsCalls.java:23)
+<br/>at ACS_CRMN.TLSjourney.B_TLScheckProfile(TLSjourney.java:40)
+<br/>30 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m7"></a><h2>ACS_CRMN.TLSjourney:D_CheckEntitlement</h2>
+<div style="padding-left:3em">
+<p>A JSONObject text must begin with '{' at character 0</p>
+org.json.JSONTokener.syntaxError(JSONTokener.java:496)
+<br/>at org.json.JSONObject.&lt;init&gt;(JSONObject.java:180)
+<br/>at org.json.JSONObject.&lt;init&gt;(JSONObject.java:403)
+<br/>at ACS_CRMN.AcsCalls.custEntitlements(AcsCalls.java:55)
+<br/>at ACS_CRMN.TLSjourney.D_CheckEntitlement(TLSjourney.java:57)
+<br/>30 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m8"></a><h2>ACS_CRMN.WebJourney:A_WebJourney1</h2>
+<div style="padding-left:3em">
+<p>Error communicating with the remote browser. It may have died.
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_06'
+Driver info: driver.version: RemoteWebDriver</p>
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:467)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:216)
+<br/>at ACS_CRMN.WebJourneyBaseClass.webjourney1(WebJourneyBaseClass.java:50)
+<br/>at ACS_CRMN.WebJourney.A_WebJourney1(WebJourney.java:23)
+<br/>30 lines not shown
+<p>Caused by Connection to http://127.0.0.1:7055 refused</p>
+org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:158)
+<br/>at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:149)
+<br/>at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:121)
+<br/>at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:561)
+<br/>at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:415)
+<br/>at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:820)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:337)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:297)
+<br/>at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:136)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:325)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:446)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:216)
+<br/>at ACS_CRMN.WebJourneyBaseClass.webjourney1(WebJourneyBaseClass.java:50)
+<br/>at ACS_CRMN.WebJourney.A_WebJourney1(WebJourney.java:23)
+<br/>30 lines not shown
+<p>Caused by Connection refused: connect</p>
+java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+<br/>at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:75)
+<br/>at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+<br/>at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+<br/>at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+<br/>at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:157)
+<br/>at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:391)
+<br/>at java.net.Socket.connect(Socket.java:579)
+<br/>at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:123)
+<br/>at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:148)
+<br/>at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:149)
+<br/>at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:121)
+<br/>at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:561)
+<br/>at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:415)
+<br/>at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:820)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:337)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:297)
+<br/>at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:136)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:325)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:446)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:216)
+<br/>at ACS_CRMN.WebJourneyBaseClass.webjourney1(WebJourneyBaseClass.java:50)
+<br/>at ACS_CRMN.WebJourney.A_WebJourney1(WebJourney.java:23)
+<br/>30 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m9"></a><h2>ACS_CRMN.WebJourney:B_CheckProfile</h2>
+<div style="padding-left:3em">
+<p>A JSONObject text must begin with '{' at character 0</p>
+org.json.JSONTokener.syntaxError(JSONTokener.java:496)
+<br/>at org.json.JSONObject.&lt;init&gt;(JSONObject.java:180)
+<br/>at org.json.JSONObject.&lt;init&gt;(JSONObject.java:403)
+<br/>at ACS_CRMN.AcsCalls.custProfile(AcsCalls.java:23)
+<br/>at ACS_CRMN.WebJourney.B_CheckProfile(WebJourney.java:38)
+<br/>30 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m10"></a><h2>ACS_CRMN.WebJourney:C_WebJourney2</h2>
+<div style="padding-left:3em">
+<p>Error communicating with the remote browser. It may have died.
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_06'
+Driver info: driver.version: RemoteWebDriver</p>
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:467)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:242)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:271)
+<br/>at org.openqa.selenium.By$ById.findElement(By.java:215)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:234)
+<br/>at ACS_CRMN.WebJourneyBaseClass.webjourney2(WebJourneyBaseClass.java:92)
+<br/>at ACS_CRMN.WebJourney.C_WebJourney2(WebJourney.java:50)
+<br/>30 lines not shown
+<p>Caused by Connection to http://127.0.0.1:7055 refused</p>
+org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:158)
+<br/>at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:149)
+<br/>at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:121)
+<br/>at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:561)
+<br/>at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:415)
+<br/>at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:820)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:319)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:297)
+<br/>at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:136)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:325)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:446)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:242)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:271)
+<br/>at org.openqa.selenium.By$ById.findElement(By.java:215)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:234)
+<br/>at ACS_CRMN.WebJourneyBaseClass.webjourney2(WebJourneyBaseClass.java:92)
+<br/>at ACS_CRMN.WebJourney.C_WebJourney2(WebJourney.java:50)
+<br/>30 lines not shown
+<p>Caused by Connection refused: connect</p>
+java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+<br/>at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:75)
+<br/>at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+<br/>at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+<br/>at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+<br/>at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:157)
+<br/>at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:391)
+<br/>at java.net.Socket.connect(Socket.java:579)
+<br/>at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:123)
+<br/>at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:148)
+<br/>at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:149)
+<br/>at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:121)
+<br/>at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:561)
+<br/>at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:415)
+<br/>at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:820)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:319)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:297)
+<br/>at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:136)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:325)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:446)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:242)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:271)
+<br/>at org.openqa.selenium.By$ById.findElement(By.java:215)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:234)
+<br/>at ACS_CRMN.WebJourneyBaseClass.webjourney2(WebJourneyBaseClass.java:92)
+<br/>at ACS_CRMN.WebJourney.C_WebJourney2(WebJourney.java:50)
+<br/>30 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m11"></a><h2>ACS_CRMN.WebJourney:D_CheckEntitlement</h2>
+<div style="padding-left:3em">
+<p>A JSONObject text must begin with '{' at character 0</p>
+org.json.JSONTokener.syntaxError(JSONTokener.java:496)
+<br/>at org.json.JSONObject.&lt;init&gt;(JSONObject.java:180)
+<br/>at org.json.JSONObject.&lt;init&gt;(JSONObject.java:403)
+<br/>at ACS_CRMN.AcsCalls.custEntitlements(AcsCalls.java:55)
+<br/>at ACS_CRMN.WebJourney.D_CheckEntitlement(WebJourney.java:60)
+<br/>30 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m12"></a><h2>ACS_CRMN.WebJourney:E_WebJourneyEdit</h2>
+<div style="padding-left:3em">
+<p>Error communicating with the remote browser. It may have died.
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_06'
+Driver info: driver.version: RemoteWebDriver</p>
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:467)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:242)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:327)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:343)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:234)
+<br/>at ACS_CRMN.WebJourneyBaseClass.webjourneyEdit(WebJourneyBaseClass.java:109)
+<br/>at ACS_CRMN.WebJourney.E_WebJourneyEdit(WebJourney.java:71)
+<br/>30 lines not shown
+<p>Caused by Connection to http://127.0.0.1:7055 refused</p>
+org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:158)
+<br/>at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:149)
+<br/>at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:121)
+<br/>at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:561)
+<br/>at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:415)
+<br/>at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:820)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:319)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:297)
+<br/>at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:136)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:325)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:446)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:242)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:327)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:343)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:234)
+<br/>at ACS_CRMN.WebJourneyBaseClass.webjourneyEdit(WebJourneyBaseClass.java:109)
+<br/>at ACS_CRMN.WebJourney.E_WebJourneyEdit(WebJourney.java:71)
+<br/>30 lines not shown
+<p>Caused by Connection refused: connect</p>
+java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+<br/>at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:75)
+<br/>at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+<br/>at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+<br/>at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+<br/>at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:157)
+<br/>at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:391)
+<br/>at java.net.Socket.connect(Socket.java:579)
+<br/>at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:123)
+<br/>at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:148)
+<br/>at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:149)
+<br/>at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:121)
+<br/>at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:561)
+<br/>at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:415)
+<br/>at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:820)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:319)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:297)
+<br/>at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:136)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:325)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:446)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:242)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:327)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:343)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:234)
+<br/>at ACS_CRMN.WebJourneyBaseClass.webjourneyEdit(WebJourneyBaseClass.java:109)
+<br/>at ACS_CRMN.WebJourney.E_WebJourneyEdit(WebJourney.java:71)
+<br/>30 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m13"></a><h2>ACS_CRMN.WebJourney:F_checkProfile</h2>
+<div style="padding-left:3em">
+<p>A JSONObject text must begin with '{' at character 0</p>
+org.json.JSONTokener.syntaxError(JSONTokener.java:496)
+<br/>at org.json.JSONObject.&lt;init&gt;(JSONObject.java:180)
+<br/>at org.json.JSONObject.&lt;init&gt;(JSONObject.java:403)
+<br/>at ACS_CRMN.AcsCalls.custProfile(AcsCalls.java:23)
+<br/>at ACS_CRMN.WebJourney.F_checkProfile(WebJourney.java:80)
+<br/>30 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m14"></a><h2>ACS_CRMN.WebJourney:G_CheckEntitlement</h2>
+<div style="padding-left:3em">
+<p>A JSONObject text must begin with '{' at character 0</p>
+org.json.JSONTokener.syntaxError(JSONTokener.java:496)
+<br/>at org.json.JSONObject.&lt;init&gt;(JSONObject.java:180)
+<br/>at org.json.JSONObject.&lt;init&gt;(JSONObject.java:403)
+<br/>at ACS_CRMN.AcsCalls.custEntitlements(AcsCalls.java:55)
+<br/>at ACS_CRMN.WebJourney.G_CheckEntitlement(WebJourney.java:90)
+<br/>30 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

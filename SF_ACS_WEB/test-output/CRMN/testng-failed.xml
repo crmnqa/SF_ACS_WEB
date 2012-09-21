@@ -3,6 +3,12 @@
 <suite name="Failed suite [CRMN]" parallel="none">
   <test name="Webjourney(failed)" parallel="none" preserve-order="true">
     <classes>
+      <class name="ACS_CRMN.WebJourney">
+        <methods>
+          <include name="F_Check_ACS_EditJourney_Profile"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- ACS_CRMN.WebJourney -->
       <class name="ACS_CRMN.CSRjourney">
         <methods>
           <include name="D_CheckEntitlement"/>
@@ -11,14 +17,10 @@
       </class> <!-- ACS_CRMN.CSRjourney -->
       <class name="ACS_CRMN.TLSjourney">
         <methods>
+          <include name="A_TLSwebJourney"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- ACS_CRMN.TLSjourney -->
-      <class name="ACS_CRMN.WebJourney">
-        <methods>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- ACS_CRMN.WebJourney -->
     </classes>
   </test> <!-- Webjourney(failed) -->
 </suite> <!-- Failed suite [CRMN] -->

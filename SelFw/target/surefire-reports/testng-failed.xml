@@ -1,0 +1,36 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="5" skipfailedinvocationCounts="false" verbose="0" name="Failed suite [CRMN]" junit="false" parallel="none" annotations="JDK" data-provider-thread-count="10">
+  <test name="Webjourney(failed)" junit="false" parallel="none" annotations="JDK">
+    <classes>
+      <class name="ACS_CRMN.TLSjourney">
+        <methods>
+          <include name="D_CheckEntitlement"/>
+          <include name="B_TLScheckProfile"/>
+          <include name="A_TLSwebJourney"/>
+          <include name="setUp"/>
+        </methods>
+      </class>
+      <class name="ACS_CRMN.CSRjourney">
+        <methods>
+          <include name="A_custCreation"/>
+          <include name="D_CheckEntitlement"/>
+          <include name="B_custBankDetails"/>
+          <include name="setUp"/>
+          <include name="C_CheckProfile"/>
+        </methods>
+      </class>
+      <class name="ACS_CRMN.WebJourney">
+        <methods>
+          <include name="E_WebJourneyEdit"/>
+          <include name="C_WebJourney2"/>
+          <include name="A_WebJourney1"/>
+          <include name="G_CheckEntitlement"/>
+          <include name="setUp"/>
+          <include name="D_CheckEntitlement"/>
+          <include name="B_CheckProfile"/>
+          <include name="F_checkProfile"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

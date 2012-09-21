@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">13 methods, 1 failed,   12 passed</span>
+                    <span class="method-stats">14 methods, 3 failed,   11 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -101,7 +101,17 @@
                     <div class="method-list-content failed suite-CRMN">
                       <span>
                         <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CRMN" title="ACS_CRMN.TLSjourney" hash-for-method="A_TLSwebJourney">A_TLSwebJourney</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-CRMN" title="ACS_CRMN.CSRjourney" hash-for-method="D_CheckEntitlement">D_CheckEntitlement</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CRMN" title="ACS_CRMN.WebJourney" hash-for-method="F_Check_ACS_EditJourney_Profile">F_Check_ACS_EditJourney_Profile</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-CRMN -->
@@ -113,11 +123,6 @@
                       <a href="#" panel-name="suite-CRMN" class="show-methods passed suite-CRMN"> (show)</a> <!-- show-methods passed suite-CRMN -->
                     </span>
                     <div class="method-list-content passed suite-CRMN">
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-CRMN" title="ACS_CRMN.TLSjourney" hash-for-method="A_TLSwebJourney">A_TLSwebJourney</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-CRMN" title="ACS_CRMN.WebJourney" hash-for-method="A_WebJourney1">A_WebJourney1</a> <!-- method navigator-link -->
@@ -155,12 +160,12 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-CRMN" title="ACS_CRMN.TLSjourney" hash-for-method="D_CheckEntitlement">D_CheckEntitlement</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-CRMN" title="ACS_CRMN.WebJourney" hash-for-method="D_CheckEntitlement">D_CheckEntitlement</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-CRMN" title="ACS_CRMN.WebJourney" hash-for-method="D_CheckEntitlement">D_CheckEntitlement</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-CRMN" title="ACS_CRMN.TLSjourney" hash-for-method="D_CheckEntitlement">D_CheckEntitlement</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -202,6 +207,46 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-CRMN-class-failed -->
+          <div class="suite-CRMN-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">ACS_CRMN.WebJourney</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="F_Check_ACS_EditJourney_Profile">
+                  </a> <!-- F_Check_ACS_EditJourney_Profile -->
+                  <span class="method-name">F_Check_ACS_EditJourney_Profile</span>
+                  <div class="stack-trace"><b>"Profile after updation........ expected:<true> but was:<false>"</b><br>org.testng.Assert.fail(Assert.java:89)<br>org.testng.Assert.failNotEquals(Assert.java:489)<br>org.testng.Assert.assertEquals(Assert.java:118)<br>org.testng.Assert.assertEquals(Assert.java:281)<br>ACS_CRMN.WebJourney.F_Check_ACS_EditJourney_Profile(WebJourney.java:81)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br>java.lang.reflect.Method.invoke(Unknown Source)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:702)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:894)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1219)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1122)<br>org.testng.TestNG.run(TestNG.java:1030)<br>org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)<br>org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)<br>org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)<br>
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CRMN-class-failed -->
+          <div class="suite-CRMN-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">ACS_CRMN.TLSjourney</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="A_TLSwebJourney">
+                  </a> <!-- A_TLSwebJourney -->
+                  <span class="method-name">A_TLSwebJourney</span>
+                  <div class="stack-trace"><b>"Unable to locate element: {"method":"link text","selector":"Log out"}
+Command duration or timeout: 30.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.6.0_20'
+Driver info: driver.version: RemoteWebDriver
+Session ID: e68b8577-16e7-4ac9-b85e-71a25dcf8004"</b><br>sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br>sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)<br>sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)<br>java.lang.reflect.Constructor.newInstance(Unknown Source)<br>org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)<br>org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)<br>org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:472)<br>org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:242)<br>org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:279)<br>org.openqa.selenium.By$ByLinkText.findElement(By.java:240)<br>org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:234)<br>ACS_CRMN.TLSbaseClass.TLSwebjourney1(TLSbaseClass.java:90)<br>ACS_CRMN.TLSjourney.A_TLSwebJourney(TLSjourney.java:23)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br>java.lang.reflect.Method.invoke(Unknown Source)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:702)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:894)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1219)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1122)<br>org.testng.TestNG.run(TestNG.java:1030)<br>org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)<br>org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)<br>org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)<br>
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CRMN-class-failed -->
           <div class="suite-CRMN-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -227,35 +272,6 @@
                   <a name="C_CheckProfile">
                   </a> <!-- C_CheckProfile -->
                   <span class="method-name">C_CheckProfile</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-CRMN-class-passed -->
-          <div class="suite-CRMN-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">ACS_CRMN.TLSjourney</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="A_TLSwebJourney">
-                  </a> <!-- A_TLSwebJourney -->
-                  <span class="method-name">A_TLSwebJourney</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="B_TLScheckProfile">
-                  </a> <!-- B_TLScheckProfile -->
-                  <span class="method-name">B_TLScheckProfile</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="D_CheckEntitlement">
-                  </a> <!-- D_CheckEntitlement -->
-                  <span class="method-name">D_CheckEntitlement</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -310,6 +326,28 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-CRMN-class-passed -->
+          <div class="suite-CRMN-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">ACS_CRMN.TLSjourney</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="B_TLScheckProfile">
+                  </a> <!-- B_TLScheckProfile -->
+                  <span class="method-name">B_TLScheckProfile</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="D_CheckEntitlement">
+                  </a> <!-- D_CheckEntitlement -->
+                  <span class="method-name">D_CheckEntitlement</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CRMN-class-passed -->
         </div> <!-- panel CRMN -->
         <div panel-name="test-xml-CRMN" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -329,7 +367,7 @@
           &lt;include name=&quot;C_WebJourney2&quot;/&gt;
           &lt;include name=&quot;D_CheckEntitlement&quot;/&gt;
           &lt;include name=&quot;E_WebJourneyEdit&quot;/&gt;
-          &lt;include name=&quot;F_checkProfile&quot;/&gt;
+          &lt;include name=&quot;F_Check_ACS_EditJourney_Profile&quot;/&gt;
           &lt;include name=&quot;G_CheckEntitlement&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- ACS_CRMN.WebJourney --&gt;
@@ -427,64 +465,68 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(13);
+data.addRows(14);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'A_WebJourney1')
 data.setCell(0, 2, 'ACS_CRMN.WebJourney')
-data.setCell(0, 3, 37407);
+data.setCell(0, 3, 149808);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'E_WebJourneyEdit')
-data.setCell(1, 2, 'ACS_CRMN.WebJourney')
-data.setCell(1, 3, 37387);
+data.setCell(1, 1, 'A_TLSwebJourney')
+data.setCell(1, 2, 'ACS_CRMN.TLSjourney')
+data.setCell(1, 3, 56864);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'A_custCreation')
 data.setCell(2, 2, 'ACS_CRMN.CSRjourney')
-data.setCell(2, 3, 33785);
+data.setCell(2, 3, 34070);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'A_TLSwebJourney')
-data.setCell(3, 2, 'ACS_CRMN.TLSjourney')
-data.setCell(3, 3, 22441);
+data.setCell(3, 1, 'E_WebJourneyEdit')
+data.setCell(3, 2, 'ACS_CRMN.WebJourney')
+data.setCell(3, 3, 29724);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'B_custBankDetails')
 data.setCell(4, 2, 'ACS_CRMN.CSRjourney')
-data.setCell(4, 3, 15297);
+data.setCell(4, 3, 16027);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'B_CheckProfile')
 data.setCell(5, 2, 'ACS_CRMN.WebJourney')
-data.setCell(5, 3, 10935);
+data.setCell(5, 3, 11107);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'C_WebJourney2')
 data.setCell(6, 2, 'ACS_CRMN.WebJourney')
-data.setCell(6, 3, 10532);
+data.setCell(6, 3, 10585);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'B_TLScheckProfile')
 data.setCell(7, 2, 'ACS_CRMN.TLSjourney')
-data.setCell(7, 3, 10157);
+data.setCell(7, 3, 10273);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'D_CheckEntitlement')
-data.setCell(8, 2, 'ACS_CRMN.TLSjourney')
-data.setCell(8, 3, 5346);
+data.setCell(8, 2, 'ACS_CRMN.WebJourney')
+data.setCell(8, 3, 5330);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'D_CheckEntitlement')
-data.setCell(9, 2, 'ACS_CRMN.WebJourney')
-data.setCell(9, 3, 5335);
+data.setCell(9, 1, 'C_CheckProfile')
+data.setCell(9, 2, 'ACS_CRMN.CSRjourney')
+data.setCell(9, 3, 5293);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'C_CheckProfile')
-data.setCell(10, 2, 'ACS_CRMN.CSRjourney')
-data.setCell(10, 3, 5199);
+data.setCell(10, 1, 'D_CheckEntitlement')
+data.setCell(10, 2, 'ACS_CRMN.TLSjourney')
+data.setCell(10, 3, 5191);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'D_CheckEntitlement')
-data.setCell(11, 2, 'ACS_CRMN.CSRjourney')
-data.setCell(11, 3, 203);
+data.setCell(11, 1, 'F_Check_ACS_EditJourney_Profile')
+data.setCell(11, 2, 'ACS_CRMN.WebJourney')
+data.setCell(11, 3, 5170);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'G_CheckEntitlement')
-data.setCell(12, 2, 'ACS_CRMN.WebJourney')
-data.setCell(12, 3, 173);
+data.setCell(12, 1, 'D_CheckEntitlement')
+data.setCell(12, 2, 'ACS_CRMN.CSRjourney')
+data.setCell(12, 3, 233);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'G_CheckEntitlement')
+data.setCell(13, 2, 'ACS_CRMN.WebJourney')
+data.setCell(13, 3, 163);
 window.suiteTableData['CRMN']= { tableData: data, tableDiv: 'times-div-CRMN'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <span class="suite-total-time">Total running time: 5 minutes</span>
               <div id="times-div-CRMN">
               </div> <!-- times-div-CRMN -->
             </div> <!-- times-div -->
@@ -499,16 +541,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-CRMN" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">1 ignored method</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">ACS_CRMN.WebJourney</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">F_Check_ACS_EditJourney_Profile</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-CRMN" class="panel">
@@ -524,71 +559,79 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">A_WebJourney1</span>
-                <span class="method-start">16475 ms</span>
+                <span class="method-start">14381 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">B_CheckProfile</span>
-                <span class="method-start">53882 ms</span>
+                <span class="method-start">164189 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">C_WebJourney2</span>
-                <span class="method-start">64819 ms</span>
+                <span class="method-start">175297 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">D_CheckEntitlement</span>
-                <span class="method-start">75351 ms</span>
+                <span class="method-start">185882 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">E_WebJourneyEdit</span>
-                <span class="method-start">80686 ms</span>
+                <span class="method-start">191212 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">F_Check_ACS_EditJourney_Profile</span>
+                <span class="method-start">220937 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">G_CheckEntitlement</span>
-                <span class="method-start">118073 ms</span>
+                <span class="method-start">226109 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">ACS_CRMN.CSRjourney</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">118248 ms</span>
+                <span class="method-start">226275 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">A_custCreation</span>
-                <span class="method-start">134557 ms</span>
+                <span class="method-start">241115 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">C_CheckProfile</span>
-                <span class="method-start">168343 ms</span>
+                <span class="method-start">275185 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">B_custBankDetails</span>
-                <span class="method-start">173544 ms</span>
+                <span class="method-start">280479 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">D_CheckEntitlement</span>
-                <span class="method-start">188841 ms</span>
+                <span class="method-start">296507 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">ACS_CRMN.TLSjourney</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">189046 ms</span>
+                <span class="method-start">296745 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">A_TLSwebJourney</span>
-                <span class="method-start">201156 ms</span>
+                <span class="method-start">314587 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">B_TLScheckProfile</span>
-                <span class="method-start">223598 ms</span>
+                <span class="method-start">371453 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">D_CheckEntitlement</span>
-                <span class="method-start">233757 ms</span>
+                <span class="method-start">381727 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

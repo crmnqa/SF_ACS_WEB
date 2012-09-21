@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Webjourney</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>12/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>11/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Sep 03 17:25:57 BST 2012</td>
+<td>Started on:</td><td>Tue Sep 04 11:05:07 BST 2012</td>
 </tr>
-<tr><td>Total time:</td><td>239 seconds (239110 ms)</td>
+<tr><td>Total time:</td><td>386 seconds (386930 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,11 +75,89 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='ACS_CRMN.TLSjourney.A_TLSwebJourney()'><b>A_TLSwebJourney</b><br>Test class: ACS_CRMN.TLSjourney</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Log out&quot;}
+Command duration or timeout: 30.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.6.0_20&apos;
+Driver info: driver.version: RemoteWebDriver
+Session ID: e68b8577-16e7-4ac9-b85e-71a25dcf8004
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:472)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:242)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:279)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:240)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:234)
+	at ACS_CRMN.TLSbaseClass.TLSwebjourney1(TLSbaseClass.java:90)
+	at ACS_CRMN.TLSjourney.A_TLSwebJourney(TLSjourney.java:23)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Log out&quot;}
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.6.0_20&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.&lt;anonymous method&gt;(file:///C:/Users/JVendi/AppData/Local/Temp/anonymous2530234918160500693webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:6556)
+	at &lt;anonymous class&gt;.&lt;anonymous method&gt;(file:///C:/Users/JVendi/AppData/Local/Temp/anonymous2530234918160500693webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:471)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace29913235", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace29913235'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"link text","selector":"Log out"}
+Command duration or timeout: 30.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.6.0_20'
+Driver info: driver.version: RemoteWebDriver
+Session ID: e68b8577-16e7-4ac9-b85e-71a25dcf8004
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:472)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:242)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:279)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:240)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:234)
+	at ACS_CRMN.TLSbaseClass.TLSwebjourney1(TLSbaseClass.java:90)
+	at ACS_CRMN.TLSjourney.A_TLSwebJourney(TLSjourney.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:702)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:894)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1219)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
+	at org.testng.TestNG.run(TestNG.java:1030)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {"method":"link text","selector":"Log out"}
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.6.0_20'
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.&lt;anonymous method&gt;(file:///C:/Users/JVendi/AppData/Local/Temp/anonymous2530234918160500693webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:6556)
+	at &lt;anonymous class&gt;.&lt;anonymous method&gt;(file:///C:/Users/JVendi/AppData/Local/Temp/anonymous2530234918160500693webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:471)
+</pre></div></td>
+<td>56</td>
+<td>ACS_CRMN.TLSjourney@ece65</td></tr>
+<tr>
 <td title='ACS_CRMN.CSRjourney.D_CheckEntitlement()'><b>D_CheckEntitlement</b><br>Test class: ACS_CRMN.CSRjourney</td>
 <td><div><pre>java.lang.AssertionError: Entitlements  before updation...should be zero....... expected:&lt;true&gt; but was:&lt;false&gt;
 	at ACS_CRMN.CSRjourney.D_CheckEntitlement(CSRjourney.java:61)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace9775365", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace9775365'><pre>java.lang.AssertionError: Entitlements  before updation...should be zero....... expected:&lt;true&gt; but was:&lt;false&gt;
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace12890052", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace12890052'><pre>java.lang.AssertionError: Entitlements  before updation...should be zero....... expected:&lt;true&gt; but was:&lt;false&gt;
 	at org.testng.Assert.fail(Assert.java:89)
 	at org.testng.Assert.failNotEquals(Assert.java:489)
 	at org.testng.Assert.assertEquals(Assert.java:118)
@@ -111,7 +189,45 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
 </pre></div></td>
 <td>0</td>
-<td>ACS_CRMN.CSRjourney@1bca5f1</td></tr>
+<td>ACS_CRMN.CSRjourney@169ca65</td></tr>
+<tr>
+<td title='ACS_CRMN.WebJourney.F_Check_ACS_EditJourney_Profile()'><b>F_Check_ACS_EditJourney_Profile</b><br>Test class: ACS_CRMN.WebJourney</td>
+<td><div><pre>java.lang.AssertionError: Profile after updation........ expected:&lt;true&gt; but was:&lt;false&gt;
+	at ACS_CRMN.WebJourney.F_Check_ACS_EditJourney_Profile(WebJourney.java:81)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace23934262", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace23934262'><pre>java.lang.AssertionError: Profile after updation........ expected:&lt;true&gt; but was:&lt;false&gt;
+	at org.testng.Assert.fail(Assert.java:89)
+	at org.testng.Assert.failNotEquals(Assert.java:489)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:281)
+	at ACS_CRMN.WebJourney.F_Check_ACS_EditJourney_Profile(WebJourney.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:702)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:894)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1219)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
+	at org.testng.TestNG.run(TestNG.java:1030)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>5</td>
+<td>ACS_CRMN.WebJourney@15a8767</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -121,65 +237,60 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='ACS_CRMN.TLSjourney.A_TLSwebJourney()'><b>A_TLSwebJourney</b><br>Test class: ACS_CRMN.TLSjourney</td>
-<td></td>
-<td>22</td>
-<td>ACS_CRMN.TLSjourney@1dfafd1</td></tr>
-<tr>
 <td title='ACS_CRMN.WebJourney.A_WebJourney1()'><b>A_WebJourney1</b><br>Test class: ACS_CRMN.WebJourney</td>
 <td></td>
-<td>37</td>
-<td>ACS_CRMN.WebJourney@6f7ce9</td></tr>
+<td>149</td>
+<td>ACS_CRMN.WebJourney@15a8767</td></tr>
 <tr>
 <td title='ACS_CRMN.CSRjourney.A_custCreation()'><b>A_custCreation</b><br>Test class: ACS_CRMN.CSRjourney</td>
 <td></td>
-<td>33</td>
-<td>ACS_CRMN.CSRjourney@1bca5f1</td></tr>
+<td>34</td>
+<td>ACS_CRMN.CSRjourney@169ca65</td></tr>
 <tr>
 <td title='ACS_CRMN.WebJourney.B_CheckProfile()'><b>B_CheckProfile</b><br>Test class: ACS_CRMN.WebJourney</td>
 <td></td>
-<td>10</td>
-<td>ACS_CRMN.WebJourney@6f7ce9</td></tr>
+<td>11</td>
+<td>ACS_CRMN.WebJourney@15a8767</td></tr>
 <tr>
 <td title='ACS_CRMN.TLSjourney.B_TLScheckProfile()'><b>B_TLScheckProfile</b><br>Test class: ACS_CRMN.TLSjourney</td>
 <td></td>
 <td>10</td>
-<td>ACS_CRMN.TLSjourney@1dfafd1</td></tr>
+<td>ACS_CRMN.TLSjourney@ece65</td></tr>
 <tr>
 <td title='ACS_CRMN.CSRjourney.B_custBankDetails()'><b>B_custBankDetails</b><br>Test class: ACS_CRMN.CSRjourney</td>
 <td></td>
-<td>15</td>
-<td>ACS_CRMN.CSRjourney@1bca5f1</td></tr>
+<td>16</td>
+<td>ACS_CRMN.CSRjourney@169ca65</td></tr>
 <tr>
 <td title='ACS_CRMN.CSRjourney.C_CheckProfile()'><b>C_CheckProfile</b><br>Test class: ACS_CRMN.CSRjourney</td>
 <td></td>
 <td>5</td>
-<td>ACS_CRMN.CSRjourney@1bca5f1</td></tr>
+<td>ACS_CRMN.CSRjourney@169ca65</td></tr>
 <tr>
 <td title='ACS_CRMN.WebJourney.C_WebJourney2()'><b>C_WebJourney2</b><br>Test class: ACS_CRMN.WebJourney</td>
 <td></td>
 <td>10</td>
-<td>ACS_CRMN.WebJourney@6f7ce9</td></tr>
+<td>ACS_CRMN.WebJourney@15a8767</td></tr>
 <tr>
 <td title='ACS_CRMN.WebJourney.D_CheckEntitlement()'><b>D_CheckEntitlement</b><br>Test class: ACS_CRMN.WebJourney</td>
 <td></td>
 <td>5</td>
-<td>ACS_CRMN.WebJourney@6f7ce9</td></tr>
+<td>ACS_CRMN.WebJourney@15a8767</td></tr>
 <tr>
 <td title='ACS_CRMN.TLSjourney.D_CheckEntitlement()'><b>D_CheckEntitlement</b><br>Test class: ACS_CRMN.TLSjourney</td>
 <td></td>
 <td>5</td>
-<td>ACS_CRMN.TLSjourney@1dfafd1</td></tr>
+<td>ACS_CRMN.TLSjourney@ece65</td></tr>
 <tr>
 <td title='ACS_CRMN.WebJourney.E_WebJourneyEdit()'><b>E_WebJourneyEdit</b><br>Test class: ACS_CRMN.WebJourney</td>
 <td></td>
-<td>37</td>
-<td>ACS_CRMN.WebJourney@6f7ce9</td></tr>
+<td>29</td>
+<td>ACS_CRMN.WebJourney@15a8767</td></tr>
 <tr>
 <td title='ACS_CRMN.WebJourney.G_CheckEntitlement()'><b>G_CheckEntitlement</b><br>Test class: ACS_CRMN.WebJourney</td>
 <td></td>
 <td>0</td>
-<td>ACS_CRMN.WebJourney@6f7ce9</td></tr>
+<td>ACS_CRMN.WebJourney@15a8767</td></tr>
 </table><p>
 </body>
 </html>
